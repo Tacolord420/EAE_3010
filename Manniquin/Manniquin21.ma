@@ -1,6 +1,6 @@
 //Maya ASCII 2018ff09 scene
-//Name: Manniquin20.ma
-//Last modified: Wed, Jun 12, 2019 11:04:47 AM
+//Name: Manniquin21.ma
+//Last modified: Wed, Jun 12, 2019 11:31:21 AM
 //Codeset: 1252
 requires maya "2018ff09";
 requires "mtoa" "3.1.2.1";
@@ -16,8 +16,8 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "3D63B263-4EBD-8C8C-78BE-01BAE397438F";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -61.567691724108883 140.21209270050252 354.45617535066594 ;
-	setAttr ".r" -type "double3" -1087.8939432400041 1788.940578581349 0 ;
+	setAttr ".t" -type "double3" 292.17129736966518 -0.77894928392786067 277.35119805113698 ;
+	setAttr ".r" -type "double3" -1066.2939432407629 1844.1405785808597 0 ;
 	setAttr ".rp" -type "double3" 0 2.8421709430404007e-14 -2.8421709430404007e-14 ;
 	setAttr ".rpt" -type "double3" -9.8830844766814622e-15 -5.300501341928009e-14 5.8389951031606949e-14 ;
 createNode camera -s -n "perspShape" -p "persp";
@@ -25,11 +25,11 @@ createNode camera -s -n "perspShape" -p "persp";
 	setAttr -k off ".v" no;
 	setAttr ".pze" yes;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 354.41111648632273;
+	setAttr ".coi" 403.25992270900508;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 0 153.78677018075365 3.5527136788005009e-15 ;
+	setAttr ".tp" -type "double3" -55.723468780517578 144.55697631835938 -6.2557692527770961 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 	setAttr -k on ".ai_translator" -type "string" "perspective";
 createNode transform -s -n "top";
@@ -85,6 +85,40 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr ".hc" -type "string" "viewSet -s %camera";
 	setAttr ".o" yes;
 	setAttr -k on ".ai_translator" -type "string" "orthographic";
+createNode transform -n "back";
+	rename -uid "AF1318F3-4895-7121-C4D0-D7BDF26B52A6";
+	setAttr ".v" no;
+	setAttr ".t" -type "double3" 0 0 -1000.1 ;
+	setAttr ".r" -type "double3" 0 180 0 ;
+createNode camera -n "backShape" -p "back";
+	rename -uid "FE8F2635-4780-FBFE-E9DD-F19DB182AA92";
+	setAttr -k off ".v";
+	setAttr ".rnd" no;
+	setAttr ".coi" 1000.1;
+	setAttr ".ow" 30;
+	setAttr ".imn" -type "string" "back1";
+	setAttr ".den" -type "string" "back1_depth";
+	setAttr ".man" -type "string" "back1_mask";
+	setAttr ".hc" -type "string" "viewSet -b %camera";
+	setAttr ".o" yes;
+	setAttr ".ai_translator" -type "string" "orthographic";
+createNode transform -n "left";
+	rename -uid "D49FF9D9-42E6-F76E-8D7A-F3A87450EFBD";
+	setAttr ".v" no;
+	setAttr ".t" -type "double3" -1000.1 0 0 ;
+	setAttr ".r" -type "double3" 0 -89.999999999999986 0 ;
+createNode camera -n "leftShape" -p "left";
+	rename -uid "C266D93D-468E-3928-1E95-BF813FE818DA";
+	setAttr -k off ".v";
+	setAttr ".rnd" no;
+	setAttr ".coi" 1000.1;
+	setAttr ".ow" 30;
+	setAttr ".imn" -type "string" "left1";
+	setAttr ".den" -type "string" "left1_depth";
+	setAttr ".man" -type "string" "left1_mask";
+	setAttr ".hc" -type "string" "viewSet -ls %camera";
+	setAttr ".o" yes;
+	setAttr ".ai_translator" -type "string" "orthographic";
 createNode transform -n "SM_Pelvis";
 	rename -uid "38FA1E45-418C-27DC-CAAA-53B6F2B2430C";
 	setAttr ".rp" -type "double3" 0 103.57704113978147 0 ;
@@ -8674,15 +8708,6 @@ createNode mesh -n "pSphere7Shape" -p "transform10";
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr ".vcs" 2;
 	setAttr ".ai_translator" -type "string" "polymesh";
-createNode transform -n "Neck";
-	rename -uid "30AE2D1D-4FFB-7932-9416-1DB7FAC97FD5";
-	setAttr ".rp" -type "double3" -0.16934561729431152 153.82825469970703 -4.5075636655092239 ;
-	setAttr ".sp" -type "double3" -0.16934561729431152 153.82825469970703 -4.5075636655092239 ;
-createNode clusterHandle -n "NeckShape" -p "|Neck";
-	rename -uid "11A2ABC1-4DFD-66B8-5FB0-F0B63B7FE933";
-	setAttr ".ihi" 0;
-	setAttr -k off ".v";
-	setAttr ".or" -type "double3" -0.16934561729431152 153.82825469970703 -4.5075636655092239 ;
 createNode transform -n "L_Arm";
 	rename -uid "B6D8EF82-441D-7B77-774A-D7A562926179";
 	setAttr ".rp" -type "double3" 13.003898620605469 146.22105407714844 -4.9405803680419922 ;
@@ -8701,24 +8726,6 @@ createNode clusterHandle -n "R_ForearmShape" -p "R_Forearm";
 	setAttr ".ihi" 0;
 	setAttr -k off ".v";
 	setAttr ".or" -type "double3" -36.819374084472656 146.23357391357422 -4.940579891204834 ;
-createNode transform -n "L_Hand";
-	rename -uid "F7FC92DB-469E-0D27-EBD4-BD96F4B4F790";
-	setAttr ".rp" -type "double3" 55.32493782043457 146.33348083496094 -4.9585367441177368 ;
-	setAttr ".sp" -type "double3" 55.32493782043457 146.33348083496094 -4.9585367441177368 ;
-createNode clusterHandle -n "L_HandShape" -p "L_Hand";
-	rename -uid "FF147A6E-4479-29E3-DA9F-22A9E169D638";
-	setAttr ".ihi" 0;
-	setAttr -k off ".v";
-	setAttr ".or" -type "double3" 55.32493782043457 146.33348083496094 -4.9585367441177368 ;
-createNode transform -n "Torso";
-	rename -uid "1DAF2A5B-4C2B-72C5-A289-FDB87A8C4F9A";
-	setAttr ".rp" -type "double3" 0.0049295425415039063 117.49041366577148 -0.89100217819213867 ;
-	setAttr ".sp" -type "double3" 0.0049295425415039063 117.49041366577148 -0.89100217819213867 ;
-createNode clusterHandle -n "TorsoShape" -p "Torso";
-	rename -uid "249E0BE1-4F50-34F5-2D20-398DC24CAF76";
-	setAttr ".ihi" 0;
-	setAttr -k off ".v";
-	setAttr ".or" -type "double3" 0.0049295425415039063 117.49041366577148 -0.89100217819213867 ;
 createNode transform -n "L_Thigh";
 	rename -uid "4EEEDEC0-49D1-E772-7881-75B4CFA3F44F";
 	setAttr ".rp" -type "double3" 9.0546712875366211 93.137645721435547 -2.2094643115997314 ;
@@ -8782,220 +8789,6 @@ createNode clusterHandle -n "cluster16HandleShape" -p "cluster16Handle";
 	setAttr ".ihi" 0;
 	setAttr -k off ".v";
 	setAttr ".or" -type "double3" 1.2874603271484375e-05 103.16800308227539 -3.1369390487670898 ;
-createNode joint -n "Pelvis";
-	rename -uid "F8F96A35-40D8-D84B-25ED-E6B8A5952FE0";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".t" -type "double3" 1.2874603277701624e-05 103.16799926757813 -3.1369390487670898 ;
-	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
-	setAttr ".mxrl" -type "double3" 360 360 360 ;
-	setAttr ".jo" -type "double3" 0 180 87.936180271543037 ;
-	setAttr ".bps" -type "matrix" -0.0360126606757325 -0.99935133375157637 -1.2246467991473532e-16 0
-		 -0.99935133375157637 0.0360126606757325 0 0 4.4102789625315581e-18 1.2238524121025063e-16 -1 0
-		 1.2874603277701624e-05 103.16799926757813 -3.1369390487670898 1;
-	setAttr ".radi" 1.9669616357306918;
-createNode joint -n "R_Hip" -p "Pelvis";
-	rename -uid "35C100BA-470A-08EB-7352-048027AC1323";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 1;
-	setAttr ".t" -type "double3" 10.349926616027361 8.6875901597406173 -0.92747545242309526 ;
-	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
-	setAttr ".mxrl" -type "double3" 360 360 360 ;
-	setAttr ".jo" -type "double3" 1.4124500153760504e-30 1.7655625192200632e-31 -1.1927080055488184e-15 ;
-	setAttr ".bps" -type "matrix" -0.0360126606757325 -0.99935133375157637 -1.2246467991473532e-16 0
-		 -0.99935133375157637 0.0360126606757325 0 0 4.4102789625315581e-18 1.2238524121025063e-16 -1 0
-		 -9.0546703338623047 93.137649536132813 -2.2094635963439959 1;
-	setAttr ".radi" 1.9669616357306918;
-createNode joint -n "R_Knee" -p "R_Hip";
-	rename -uid "87A63560-4021-08E7-5FB2-A4AB86FBCC71";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 2;
-	setAttr ".t" -type "double3" 29.540320940172244 0.59676261819095444 -2.0309319496154781 ;
-	setAttr ".r" -type "double3" 1.190621273638007e-15 -5.3294647428430372e-14 -1.1219756854520895e-14 ;
-	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
-	setAttr ".mxrl" -type "double3" 360 360 360 ;
-	setAttr ".jo" -type "double3" -5.8250986470825049e-17 7.0157419278983739e-15 -0.9514201121588699 ;
-	setAttr ".bps" -type "matrix" -0.019413816196328586 -0.99981153411065193 -1.2244779611207598e-16 0
-		 -0.99981153411065193 0.019413816196328586 -2.0334831973854649e-18 0 4.4102789625315581e-18 1.2238524121025063e-16 -1 0
-		 -10.714871406555176 63.637981414794936 -0.1785316467285214 1;
-	setAttr ".radi" 1.8568581543619094;
-createNode joint -n "R_Foot" -p "|Pelvis|R_Hip|R_Knee";
-	rename -uid "67F07CA8-428C-473C-D484-2A87C19CA708";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 3;
-	setAttr ".t" -type "double3" 28.384912729733195 -0.092312800064918932 3.450650453567504 ;
-	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
-	setAttr ".mxrl" -type "double3" 360 360 360 ;
-	setAttr ".jo" -type "double3" 0 180 88.887600383701908 ;
-	setAttr ".bps" -type "matrix" 1 -1.5612511283791266e-16 1.2687495887726685e-16 0
-		 4.5102810375396984e-17 1 1.2238524121025063e-16 0 -1.2687495887726688e-16 -1.2238524121025063e-16 1 0
-		 -11.173635482788088 35.256626129150391 -3.6291821002960289 1;
-	setAttr ".radi" 1.8568581543619094;
-createNode ikEffector -n "effector2" -p "|Pelvis|R_Hip|R_Knee";
-	rename -uid "50B0B04F-4476-DD0F-48EA-31A107C06997";
-	setAttr ".v" no;
-	setAttr ".hd" yes;
-createNode joint -n "L_Hip" -p "Pelvis";
-	rename -uid "48D75C6F-44E2-60B4-2C3C-C6A48AED1735";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 1;
-	setAttr ".t" -type "double3" 9.6977610411549904 -9.4100045429673376 -0.92747473716736017 ;
-	setAttr ".r" -type "double3" 0.00043184324686592463 4.0278084502819762e-06 -1.0585693606567399e-05 ;
-	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
-	setAttr ".mxrl" -type "double3" 360 360 360 ;
-	setAttr ".jo" -type "double3" -180 4.437660319163293e-16 -3.6260446452993751 ;
-	setAttr ".bps" -type "matrix" 0.027262590177556077 -0.99962830651038015 -1.2221951578494303e-16 0
-		 0.99962830651038037 0.02726259017755607 1.3020985828018553e-16 0 -1.2682943955303423e-16 -1.2572394558999164e-16 1 0
-		 9.0546712875366282 93.137649536132827 -2.209464311599731 1;
-	setAttr ".radi" 1.9528627818300144;
-createNode joint -n "L_Knee" -p "L_Hip";
-	rename -uid "6040DC83-4060-007D-B01C-1B9E563F0DFE";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 2;
-	setAttr ".t" -type "double3" 29.533960828929409 0.85534577507542409 2.030933141708374 ;
-	setAttr ".r" -type "double3" 1.0829365684821946e-14 -1.4030355750096266e-12 2.9447999972680843e-13 ;
-	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
-	setAttr ".mxrl" -type "double3" 360 360 360 ;
-	setAttr ".jo" -type "double3" 0 0 0.38397020018800143 ;
-	setAttr ".bps" -type "matrix" 0.033960981148298493 -0.99942315950724536 -1.213441707215566e-16 0
-		 0.99942315950724558 0.033960981148298486 1.3102598774269808e-16 0 -1.2682943955303423e-16 -1.2572394558999164e-16 1 0
-		 10.714871406555179 63.637985229492202 -0.17853116989136053 1;
-	setAttr ".radi" 1.857405527698148;
-createNode joint -n "L_Ankle" -p "|Pelvis|L_Hip|L_Knee";
-	rename -uid "CEAAD664-447C-76CB-FA5B-3F97F39578C8";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 3;
-	setAttr ".t" -type "double3" 28.38056766131777 -0.50535935883267769 -3.450650691986084 ;
-	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
-	setAttr ".mxrl" -type "double3" 360 360 360 ;
-	setAttr ".jo" -type "double3" 0 0 88.053804882969573 ;
-	setAttr ".bps" -type "matrix" 1.0000000000000002 -2.1510571102112408e-16 1.2682943955303421e-16 0
-		 2.1510571102112408e-16 1 1.2572394558999169e-16 0 -1.2682943955303423e-16 -1.2572394558999164e-16 1 0
-		 11.173635482788091 35.256626129150412 -3.6291818618774481 1;
-	setAttr ".radi" 1.857405527698148;
-createNode ikEffector -n "effector1" -p "|Pelvis|L_Hip|L_Knee";
-	rename -uid "75332419-4546-786E-B8AE-CC84C7946340";
-	setAttr ".v" no;
-	setAttr ".hd" yes;
-createNode joint -n "Torso1" -p "Pelvis";
-	rename -uid "D36F3419-4A30-B516-8A0F-33A914FD72DC";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 1;
-	setAttr ".t" -type "double3" -15.224272842377061 0.20459610741282885 -2.6916742711587718 ;
-	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
-	setAttr ".mxrl" -type "double3" 360 360 360 ;
-	setAttr ".jo" -type "double3" 180 0 -22.653079888964911 ;
-	setAttr ".bps" -type "matrix" 0.35166618202047917 -0.93612547044888128 -1.1301699553954697e-16 0
-		 0.93612547044888117 0.35166618202047917 -7.5297354934060417e-17 0 1.1023202713602172e-16 -7.9318554792275607e-17 1 0
-		 0.34381605368718104 118.38976468819737 -0.44526477760831629 1;
-	setAttr ".radi" 1.8285358197956341;
-createNode joint -n "Chest" -p "Torso1";
-	rename -uid "E3435467-42CD-EBC7-2310-02AB6EB50710";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 2;
-	setAttr ".t" -type "double3" -25.008888456526776 8.8412366365644388 -7.1381563562602111 ;
-	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
-	setAttr ".mxrl" -type "double3" 360 360 360 ;
-	setAttr ".jo" -type "double3" -4.5446184266745635e-15 -6.315829922065607e-15 69.410739839492052 ;
-	setAttr ".bps" -type "matrix" 1 0 -1.1023202713602171e-16 0 -5.5511151231257827e-17 1 7.9318554792275607e-17 0
-		 1.1023202713602172e-16 -7.9318554792275607e-17 1 0 -0.17445746064185663 144.9103860922873 -7.5834211338685256 1;
-	setAttr ".radi" 0.5;
-createNode joint -n "Neck" -p "Chest";
-	rename -uid "B9412A01-4BF4-A429-802E-EE8AF9BADC63";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 3;
-	setAttr ".t" -type "double3" 0.005111843347542333 8.9178609780252032 3.0758575428651067 ;
-	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
-	setAttr ".mxrl" -type "double3" 360 360 360 ;
-	setAttr ".bps" -type "matrix" 1 0 -1.1023202713602171e-16 0 -5.5511151231257827e-17 1 7.9318554792275607e-17 0
-		 1.1023202713602172e-16 -7.9318554792275607e-17 1 0 -0.16934561729431447 153.8282470703125 -4.507563591003418 1;
-	setAttr ".radi" 0.5;
-createNode joint -n "L_Shoulder" -p "Chest";
-	rename -uid "8DBA42AA-4055-4592-4A5E-DEA00DE9185F";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 3;
-	setAttr ".t" -type "double3" 13.178356081247323 1.3106679848611407 2.6428407658265325 ;
-	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
-	setAttr ".mxrl" -type "double3" 360 360 360 ;
-	setAttr ".jo" -type "double3" -3.0172225995842048e-10 -1.1471848625194101e-06 0.030138842041870732 ;
-	setAttr ".bps" -type "matrix" 0.99998908219469695 0.0046728461784675381 -1.0986018023856863e-16 0
-		 -0.0046728461784675936 0.99998908219469695 7.9832786114484752e-17 0 1.1023202713602172e-16 -7.9318554792275607e-17 1 0
-		 13.003898620605465 146.22105407714844 -4.940580368041994 1;
-	setAttr ".radi" 1.6895723474477773;
-createNode joint -n "L_Elbow" -p "|Pelvis|Torso1|Chest|L_Shoulder";
-	rename -uid "5AEEC80A-4E49-F8C0-E7C9-BCA76F2FF894";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 4;
-	setAttr ".t" -type "double3" 23.815478758728737 2.4123203434811558e-12 4.76837158203125e-07 ;
-	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
-	setAttr ".mxrl" -type "double3" 360 360 360 ;
-	setAttr ".jo" -type "double3" 0.00013543876122530649 0.055595704182537002 0.27916018169366036 ;
-	setAttr ".bps" -type "matrix" 0.99983475171332281 -0.018178813667516489 -1.1165572871034599e-16 0
-		 0.018178813667516433 0.99983475171332281 7.7301560055496102e-17 0 1.1023202713602172e-16 -7.9318554792275607e-17 1 0
-		 36.819374084472642 146.23358154296875 -4.9405798912048384 1;
-	setAttr ".radi" 1.4054979851651574;
-createNode joint -n "L_Wrist" -p "|Pelvis|Torso1|Chest|L_Shoulder|L_Elbow";
-	rename -uid "DE68FF1D-4964-5579-88F5-87B9DFF33500";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 5;
-	setAttr ".t" -type "double3" 18.505840183721865 2.7693508222259882e-13 -5.3825000012608371e-14 ;
-	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
-	setAttr ".mxrl" -type "double3" 360 360 360 ;
-	setAttr ".jo" -type "double3" 0.00016468331528842964 -0.055595625247123748 -0.3092990379238254 ;
-	setAttr ".bps" -type "matrix" 1 0 -1.1023202713602171e-16 0 -5.5511151231257827e-17 1 7.9318554792275607e-17 0
-		 1.1023202713602172e-16 -7.9318554792275607e-17 1 0 55.324935913085923 146.33348083496094 -4.9585366249084535 1;
-	setAttr ".radi" 1.4054979851651574;
-createNode joint -n "R_Shoulder" -p "Chest";
-	rename -uid "C68E77E5-436E-0089-7636-F8B8A80348F2";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 3;
-	setAttr ".t" -type "double3" -12.829442113637931 1.3106679848611407 2.6428407658265325 ;
-	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
-	setAttr ".mxrl" -type "double3" 360 360 360 ;
-	setAttr ".jo" -type "double3" 0 180 0.27545835613598219 ;
-	setAttr ".bps" -type "matrix" -0.99998844324767799 -0.0048076367463960228 -1.2615261501639528e-17 0
-		 -0.0048076367463960783 0.9999884432476781 7.9847593671672196e-17 0 1.2231237484739636e-17 7.9907320487569315e-17 -1 0
-		 -13.003899574279789 146.22105407714844 -4.9405803680419922 1;
-	setAttr ".radi" 1.6547704131447549;
-createNode joint -n "R_Elbow" -p "|Pelvis|Torso1|Chest|R_Shoulder";
-	rename -uid "716937E7-4AE7-3AFA-3589-B39622D20FC9";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 4;
-	setAttr ".t" -type "double3" 23.815139053147519 0.12702347143158477 -4.7683716175583868e-07 ;
-	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
-	setAttr ".mxrl" -type "double3" 360 360 360 ;
-	setAttr ".jo" -type "double3" -4.0158548591732507e-18 7.0167047014637477e-15 -0.065583922719985907 ;
-	setAttr ".bps" -type "matrix" -0.99998228505123932 -0.0059522755062070224 -1.2706651195499119e-17 0
-		 -0.0059522755062070779 0.99998228505123943 7.9833101238190251e-17 0 1.2231237484739636e-17 7.9907320487569315e-17 -1 0
-		 -36.81937408447267 146.23358154296878 -4.9405798912048304 1;
-	setAttr ".radi" 1.4227582313687743;
-createNode joint -n "R_Wrist" -p "|Pelvis|Torso1|Chest|R_Shoulder|R_Elbow";
-	rename -uid "925F89A1-4423-5C92-5BF3-FC9011C1B71A";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 5;
-	setAttr ".t" -type "double3" 18.683722343147004 0.21537097229420965 0.017956733703611505 ;
-	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
-	setAttr ".mxrl" -type "double3" 360 360 360 ;
-	setAttr ".jo" -type "double3" 0 180 0.34104227885597371 ;
-	setAttr ".bps" -type "matrix" 1 -9.8879238130678017e-17 1.3469591739947498e-16 0
-		 4.2500725161431774e-17 1 7.9907320487569302e-17 0 -1.3469591739947496e-16 -7.9907320487569302e-17 1 0
-		 -55.504047393798842 146.33773803710938 -4.9585366249084419 1;
-	setAttr ".radi" 1.4227582313687743;
 createNode transform -n "L_LegIK";
 	rename -uid "B0621B60-4380-3E71-0D5B-E29723A5A31F";
 	setAttr ".t" -type "double3" 11.173635482788086 35.256626129150391 -3.6291818618774414 ;
@@ -9031,7 +8824,7 @@ createNode ikHandle -n "R_LegIK" -p "R_Leg_ctl";
 	rename -uid "95365D9F-4FE1-12CD-081C-4FB0617FCB00";
 	setAttr ".t" -type "double3" -4.4408920985006262e-16 0 -1.6653345369377348e-15 ;
 	setAttr ".s" -type "double3" 0.2 0.2 0.2 ;
-	setAttr ".pv" -type "double3" -0.150248158292446 -0.011936150920300925 0.71087833299347114 ;
+	setAttr ".pv" -type "double3" -0.15024815829244598 -0.011936150920300903 0.71087833299347114 ;
 	setAttr ".roc" yes;
 createNode transform -n "R_Shoulder";
 	rename -uid "2990AC44-4247-BA4D-045F-5E81A10AC06B";
@@ -9156,40 +8949,6 @@ createNode clusterHandle -n "L_ForearmShape" -p "L_Forearm";
 	setAttr ".ihi" 0;
 	setAttr -k off ".v";
 	setAttr ".or" -type "double3" 36.819372177124023 146.23357391357422 -4.9405800104141235 ;
-createNode transform -n "back";
-	rename -uid "AF1318F3-4895-7121-C4D0-D7BDF26B52A6";
-	setAttr ".v" no;
-	setAttr ".t" -type "double3" 0 0 -1000.1 ;
-	setAttr ".r" -type "double3" 0 180 0 ;
-createNode camera -n "backShape" -p "back";
-	rename -uid "FE8F2635-4780-FBFE-E9DD-F19DB182AA92";
-	setAttr -k off ".v";
-	setAttr ".rnd" no;
-	setAttr ".coi" 1000.1;
-	setAttr ".ow" 30;
-	setAttr ".imn" -type "string" "back1";
-	setAttr ".den" -type "string" "back1_depth";
-	setAttr ".man" -type "string" "back1_mask";
-	setAttr ".hc" -type "string" "viewSet -b %camera";
-	setAttr ".o" yes;
-	setAttr ".ai_translator" -type "string" "orthographic";
-createNode transform -n "left";
-	rename -uid "D49FF9D9-42E6-F76E-8D7A-F3A87450EFBD";
-	setAttr ".v" no;
-	setAttr ".t" -type "double3" -1000.1 0 0 ;
-	setAttr ".r" -type "double3" 0 -89.999999999999986 0 ;
-createNode camera -n "leftShape" -p "left";
-	rename -uid "C266D93D-468E-3928-1E95-BF813FE818DA";
-	setAttr -k off ".v";
-	setAttr ".rnd" no;
-	setAttr ".coi" 1000.1;
-	setAttr ".ow" 30;
-	setAttr ".imn" -type "string" "left1";
-	setAttr ".den" -type "string" "left1_depth";
-	setAttr ".man" -type "string" "left1_mask";
-	setAttr ".hc" -type "string" "viewSet -ls %camera";
-	setAttr ".o" yes;
-	setAttr ".ai_translator" -type "string" "orthographic";
 createNode transform -n "Pelvis1";
 	rename -uid "48A3906D-4F69-822D-3F4A-28B47E429A3C";
 	setAttr ".t" -type "double3" 1.2874603271484375e-05 103.16799926757813 -3.1369390487670898 ;
@@ -9200,6 +8959,224 @@ createNode nurbsCurve -n "Pelvis_ctlShape" -p "Pelvis_ctl";
 	rename -uid "254D54BB-476F-53F0-5EEC-FCAC9E61FB0D";
 	setAttr -k off ".v";
 	setAttr ".tw" yes;
+createNode transform -n "transform11" -p "Pelvis_ctl";
+	rename -uid "409668FA-4111-4BB7-C1FE-7A8A251100E1";
+	setAttr ".t" -type "double3" -6.4373016357421879e-07 -5.1583999633789066 0.1568469524383545 ;
+	setAttr ".s" -type "double3" 0.05 0.05 0.05 ;
+createNode joint -n "Pelvis" -p "transform11";
+	rename -uid "F8F96A35-40D8-D84B-25ED-E6B8A5952FE0";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".t" -type "double3" 1.2874603277701624e-05 103.16799926757813 -3.1369390487670898 ;
+	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
+	setAttr ".mxrl" -type "double3" 360 360 360 ;
+	setAttr ".jo" -type "double3" 0 180 87.936180271543037 ;
+	setAttr ".bps" -type "matrix" -0.0360126606757325 -0.99935133375157637 -1.2246467991473532e-16 0
+		 -0.99935133375157637 0.0360126606757325 0 0 4.4102789625315581e-18 1.2238524121025063e-16 -1 0
+		 1.2874603277701624e-05 103.16799926757813 -3.1369390487670898 1;
+	setAttr ".radi" 1.9669616357306918;
+createNode joint -n "R_Hip" -p "Pelvis";
+	rename -uid "35C100BA-470A-08EB-7352-048027AC1323";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 1;
+	setAttr ".t" -type "double3" 10.349926616027361 8.6875901597406173 -0.92747545242309526 ;
+	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
+	setAttr ".mxrl" -type "double3" 360 360 360 ;
+	setAttr ".jo" -type "double3" 1.4124500153760504e-30 1.7655625192200632e-31 -1.1927080055488184e-15 ;
+	setAttr ".bps" -type "matrix" -0.0360126606757325 -0.99935133375157637 -1.2246467991473532e-16 0
+		 -0.99935133375157637 0.0360126606757325 0 0 4.4102789625315581e-18 1.2238524121025063e-16 -1 0
+		 -9.0546703338623047 93.137649536132813 -2.2094635963439959 1;
+	setAttr ".radi" 1.9669616357306918;
+createNode joint -n "R_Knee" -p "R_Hip";
+	rename -uid "87A63560-4021-08E7-5FB2-A4AB86FBCC71";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 2;
+	setAttr ".t" -type "double3" 29.540320940172244 0.59676261819095444 -2.0309319496154781 ;
+	setAttr ".r" -type "double3" 1.190621273638007e-15 -5.3294647428430372e-14 -1.1219756854520895e-14 ;
+	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
+	setAttr ".mxrl" -type "double3" 360 360 360 ;
+	setAttr ".jo" -type "double3" -5.8250986470825049e-17 7.0157419278983739e-15 -0.9514201121588699 ;
+	setAttr ".bps" -type "matrix" -0.019413816196328586 -0.99981153411065193 -1.2244779611207598e-16 0
+		 -0.99981153411065193 0.019413816196328586 -2.0334831973854649e-18 0 4.4102789625315581e-18 1.2238524121025063e-16 -1 0
+		 -10.714871406555176 63.637981414794936 -0.1785316467285214 1;
+	setAttr ".radi" 1.8568581543619094;
+createNode joint -n "R_Foot" -p "|Pelvis1|Pelvis_ctl|transform11|Pelvis|R_Hip|R_Knee";
+	rename -uid "67F07CA8-428C-473C-D484-2A87C19CA708";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 3;
+	setAttr ".t" -type "double3" 28.384912729733195 -0.092312800064918932 3.450650453567504 ;
+	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
+	setAttr ".mxrl" -type "double3" 360 360 360 ;
+	setAttr ".jo" -type "double3" 0 180 88.887600383701908 ;
+	setAttr ".bps" -type "matrix" 1 -1.5612511283791266e-16 1.2687495887726685e-16 0
+		 4.5102810375396984e-17 1 1.2238524121025063e-16 0 -1.2687495887726688e-16 -1.2238524121025063e-16 1 0
+		 -11.173635482788088 35.256626129150391 -3.6291821002960289 1;
+	setAttr ".radi" 1.8568581543619094;
+createNode ikEffector -n "effector2" -p "|Pelvis1|Pelvis_ctl|transform11|Pelvis|R_Hip|R_Knee";
+	rename -uid "50B0B04F-4476-DD0F-48EA-31A107C06997";
+	setAttr ".v" no;
+	setAttr ".hd" yes;
+createNode joint -n "L_Hip" -p "Pelvis";
+	rename -uid "48D75C6F-44E2-60B4-2C3C-C6A48AED1735";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 1;
+	setAttr ".t" -type "double3" 9.6977610411549904 -9.4100045429673376 -0.92747473716736017 ;
+	setAttr ".r" -type "double3" 0.00043184324686592463 4.0278084502819762e-06 -1.0585693606567399e-05 ;
+	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
+	setAttr ".mxrl" -type "double3" 360 360 360 ;
+	setAttr ".jo" -type "double3" -180 4.437660319163293e-16 -3.6260446452993751 ;
+	setAttr ".bps" -type "matrix" 0.027262590177556077 -0.99962830651038015 -1.2221951578494303e-16 0
+		 0.99962830651038037 0.02726259017755607 1.3020985828018553e-16 0 -1.2682943955303423e-16 -1.2572394558999164e-16 1 0
+		 9.0546712875366282 93.137649536132827 -2.209464311599731 1;
+	setAttr ".radi" 1.9528627818300144;
+createNode joint -n "L_Knee" -p "L_Hip";
+	rename -uid "6040DC83-4060-007D-B01C-1B9E563F0DFE";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 2;
+	setAttr ".t" -type "double3" 29.533960828929409 0.85534577507542409 2.030933141708374 ;
+	setAttr ".r" -type "double3" 1.0829365684821946e-14 -1.4030355750096266e-12 2.9447999972680843e-13 ;
+	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
+	setAttr ".mxrl" -type "double3" 360 360 360 ;
+	setAttr ".jo" -type "double3" 0 0 0.38397020018800143 ;
+	setAttr ".bps" -type "matrix" 0.033960981148298493 -0.99942315950724536 -1.213441707215566e-16 0
+		 0.99942315950724558 0.033960981148298486 1.3102598774269808e-16 0 -1.2682943955303423e-16 -1.2572394558999164e-16 1 0
+		 10.714871406555179 63.637985229492202 -0.17853116989136053 1;
+	setAttr ".radi" 1.857405527698148;
+createNode joint -n "L_Ankle" -p "|Pelvis1|Pelvis_ctl|transform11|Pelvis|L_Hip|L_Knee";
+	rename -uid "CEAAD664-447C-76CB-FA5B-3F97F39578C8";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 3;
+	setAttr ".t" -type "double3" 28.38056766131777 -0.50535935883267769 -3.450650691986084 ;
+	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
+	setAttr ".mxrl" -type "double3" 360 360 360 ;
+	setAttr ".jo" -type "double3" 0 0 88.053804882969573 ;
+	setAttr ".bps" -type "matrix" 1.0000000000000002 -2.1510571102112408e-16 1.2682943955303421e-16 0
+		 2.1510571102112408e-16 1 1.2572394558999169e-16 0 -1.2682943955303423e-16 -1.2572394558999164e-16 1 0
+		 11.173635482788091 35.256626129150412 -3.6291818618774481 1;
+	setAttr ".radi" 1.857405527698148;
+createNode ikEffector -n "effector1" -p "|Pelvis1|Pelvis_ctl|transform11|Pelvis|L_Hip|L_Knee";
+	rename -uid "75332419-4546-786E-B8AE-CC84C7946340";
+	setAttr ".v" no;
+	setAttr ".hd" yes;
+createNode joint -n "Torso1" -p "Pelvis";
+	rename -uid "D36F3419-4A30-B516-8A0F-33A914FD72DC";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 1;
+	setAttr ".t" -type "double3" -15.224272842377061 0.20459610741282885 -2.6916742711587718 ;
+	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
+	setAttr ".mxrl" -type "double3" 360 360 360 ;
+	setAttr ".jo" -type "double3" 180 0 -22.653079888964911 ;
+	setAttr ".bps" -type "matrix" 0.35166618202047917 -0.93612547044888128 -1.1301699553954697e-16 0
+		 0.93612547044888117 0.35166618202047917 -7.5297354934060417e-17 0 1.1023202713602172e-16 -7.9318554792275607e-17 1 0
+		 0.34381605368718104 118.38976468819737 -0.44526477760831629 1;
+	setAttr ".radi" 1.8285358197956341;
+createNode joint -n "Chest" -p "Torso1";
+	rename -uid "E3435467-42CD-EBC7-2310-02AB6EB50710";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 2;
+	setAttr ".t" -type "double3" -25.008888456526776 8.8412366365644388 -7.1381563562602111 ;
+	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
+	setAttr ".mxrl" -type "double3" 360 360 360 ;
+	setAttr ".jo" -type "double3" -4.5446184266745635e-15 -6.315829922065607e-15 69.410739839492052 ;
+	setAttr ".bps" -type "matrix" 1 0 -1.1023202713602171e-16 0 -5.5511151231257827e-17 1 7.9318554792275607e-17 0
+		 1.1023202713602172e-16 -7.9318554792275607e-17 1 0 -0.17445746064185663 144.9103860922873 -7.5834211338685256 1;
+	setAttr ".radi" 0.5;
+createNode joint -n "Neck" -p "Chest";
+	rename -uid "B9412A01-4BF4-A429-802E-EE8AF9BADC63";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 3;
+	setAttr ".t" -type "double3" 0.005111843347542333 8.9178609780252032 3.0758575428651067 ;
+	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
+	setAttr ".mxrl" -type "double3" 360 360 360 ;
+	setAttr ".bps" -type "matrix" 1 0 -1.1023202713602171e-16 0 -5.5511151231257827e-17 1 7.9318554792275607e-17 0
+		 1.1023202713602172e-16 -7.9318554792275607e-17 1 0 -0.16934561729431447 153.8282470703125 -4.507563591003418 1;
+	setAttr ".radi" 0.5;
+createNode joint -n "L_Shoulder" -p "Chest";
+	rename -uid "8DBA42AA-4055-4592-4A5E-DEA00DE9185F";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 3;
+	setAttr ".t" -type "double3" 13.178356081247323 1.3106679848611407 2.6428407658265325 ;
+	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
+	setAttr ".mxrl" -type "double3" 360 360 360 ;
+	setAttr ".jo" -type "double3" -3.0172225995842048e-10 -1.1471848625194101e-06 0.030138842041870732 ;
+	setAttr ".bps" -type "matrix" 0.99998908219469695 0.0046728461784675381 -1.0986018023856863e-16 0
+		 -0.0046728461784675936 0.99998908219469695 7.9832786114484752e-17 0 1.1023202713602172e-16 -7.9318554792275607e-17 1 0
+		 13.003898620605465 146.22105407714844 -4.940580368041994 1;
+	setAttr ".radi" 1.6895723474477773;
+createNode joint -n "L_Elbow" -p "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|L_Shoulder";
+	rename -uid "5AEEC80A-4E49-F8C0-E7C9-BCA76F2FF894";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 4;
+	setAttr ".t" -type "double3" 23.815478758728737 2.4123203434811558e-12 4.76837158203125e-07 ;
+	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
+	setAttr ".mxrl" -type "double3" 360 360 360 ;
+	setAttr ".jo" -type "double3" 0.00013543876122530649 0.055595704182537002 0.27916018169366036 ;
+	setAttr ".bps" -type "matrix" 0.99983475171332281 -0.018178813667516489 -1.1165572871034599e-16 0
+		 0.018178813667516433 0.99983475171332281 7.7301560055496102e-17 0 1.1023202713602172e-16 -7.9318554792275607e-17 1 0
+		 36.819374084472642 146.23358154296875 -4.9405798912048384 1;
+	setAttr ".radi" 1.4054979851651574;
+createNode joint -n "L_Wrist" -p "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|L_Shoulder|L_Elbow";
+	rename -uid "DE68FF1D-4964-5579-88F5-87B9DFF33500";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 5;
+	setAttr ".t" -type "double3" 18.505840183721865 2.7693508222259882e-13 -5.3825000012608371e-14 ;
+	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
+	setAttr ".mxrl" -type "double3" 360 360 360 ;
+	setAttr ".jo" -type "double3" 0.00016468331528842964 -0.055595625247123748 -0.3092990379238254 ;
+	setAttr ".bps" -type "matrix" 1 0 -1.1023202713602171e-16 0 -5.5511151231257827e-17 1 7.9318554792275607e-17 0
+		 1.1023202713602172e-16 -7.9318554792275607e-17 1 0 55.324935913085923 146.33348083496094 -4.9585366249084535 1;
+	setAttr ".radi" 1.4054979851651574;
+createNode joint -n "R_Shoulder" -p "Chest";
+	rename -uid "C68E77E5-436E-0089-7636-F8B8A80348F2";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 3;
+	setAttr ".t" -type "double3" -12.829442113637931 1.3106679848611407 2.6428407658265325 ;
+	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
+	setAttr ".mxrl" -type "double3" 360 360 360 ;
+	setAttr ".jo" -type "double3" 0 180 0.27545835613598219 ;
+	setAttr ".bps" -type "matrix" -0.99998844324767799 -0.0048076367463960228 -1.2615261501639528e-17 0
+		 -0.0048076367463960783 0.9999884432476781 7.9847593671672196e-17 0 1.2231237484739636e-17 7.9907320487569315e-17 -1 0
+		 -13.003899574279789 146.22105407714844 -4.9405803680419922 1;
+	setAttr ".radi" 1.6547704131447549;
+createNode joint -n "R_Elbow" -p "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|R_Shoulder";
+	rename -uid "716937E7-4AE7-3AFA-3589-B39622D20FC9";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 4;
+	setAttr ".t" -type "double3" 23.815139053147519 0.12702347143158477 -4.7683716175583868e-07 ;
+	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
+	setAttr ".mxrl" -type "double3" 360 360 360 ;
+	setAttr ".jo" -type "double3" -4.0158548591732507e-18 7.0167047014637477e-15 -0.065583922719985907 ;
+	setAttr ".bps" -type "matrix" -0.99998228505123932 -0.0059522755062070224 -1.2706651195499119e-17 0
+		 -0.0059522755062070779 0.99998228505123943 7.9833101238190251e-17 0 1.2231237484739636e-17 7.9907320487569315e-17 -1 0
+		 -36.81937408447267 146.23358154296878 -4.9405798912048304 1;
+	setAttr ".radi" 1.4227582313687743;
+createNode joint -n "R_Wrist" -p "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|R_Shoulder|R_Elbow";
+	rename -uid "925F89A1-4423-5C92-5BF3-FC9011C1B71A";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 5;
+	setAttr ".t" -type "double3" 18.683722343147004 0.21537097229420965 0.017956733703611505 ;
+	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
+	setAttr ".mxrl" -type "double3" 360 360 360 ;
+	setAttr ".jo" -type "double3" 0 180 0.34104227885597371 ;
+	setAttr ".bps" -type "matrix" 1 -9.8879238130678017e-17 1.3469591739947498e-16 0
+		 4.2500725161431774e-17 1 7.9907320487569302e-17 0 -1.3469591739947496e-16 -7.9907320487569302e-17 1 0
+		 -55.504047393798842 146.33773803710938 -4.9585366249084419 1;
+	setAttr ".radi" 1.4227582313687743;
 createNode transform -n "L_Shoulder";
 	rename -uid "92B09D3D-48E3-0660-BDCA-2B969824F6C7";
 	setAttr ".t" -type "double3" 12.986723128718452 145.57403049186499 0 ;
@@ -9216,13 +9193,27 @@ createNode transform -n "L_Wrist";
 	rename -uid "EF7641C6-45E7-5EAA-04D0-769CB40371F1";
 createNode transform -n "L_Wrist_ctl" -p "|L_Wrist";
 	rename -uid "A54423F1-4F42-EB88-CDF6-629AEA8CD5DD";
-	setAttr ".t" -type "double3" 55.324935913085938 146.33348083496094 -4.9585366249084473 ;
+	setAttr ".t" -type "double3" 55.33986459057126 146.33348083496094 -4.9585366249084473 ;
 	setAttr ".r" -type "double3" 0 0 90 ;
 	setAttr ".s" -type "double3" 10 10 10 ;
 createNode nurbsCurve -n "L_Wrist_ctlShape" -p "L_Wrist_ctl";
 	rename -uid "FF078392-436D-F598-37E1-229E067AF1B3";
 	setAttr -k off ".v";
 	setAttr ".tw" yes;
+createNode transform -n "L_Hand" -p "L_Wrist_ctl";
+	rename -uid "F7FC92DB-469E-0D27-EBD4-BD96F4B4F790";
+	setAttr ".t" -type "double3" -14.633348083496095 5.5324935913085902 0.49585366249084473 ;
+	setAttr ".r" -type "double3" 0 0 -89.999999999999986 ;
+	setAttr ".s" -type "double3" 0.1 0.1 0.1 ;
+	setAttr ".rp" -type "double3" 5.5324937820434501 14.633348083496095 -0.49585367441177369 ;
+	setAttr ".rpt" -type "double3" 9.1008543014526477 -20.165841865539544 0 ;
+	setAttr ".sp" -type "double3" 55.32493782043457 146.33348083496094 -4.9585367441177368 ;
+	setAttr ".spt" -type "double3" -49.792444038391118 -131.70013275146485 4.462683069705963 ;
+createNode clusterHandle -n "L_HandShape" -p "L_Hand";
+	rename -uid "FF147A6E-4479-29E3-DA9F-22A9E169D638";
+	setAttr ".ihi" 0;
+	setAttr -k off ".v";
+	setAttr ".or" -type "double3" 55.32493782043457 146.33348083496094 -4.9585367441177368 ;
 createNode transform -n "R_Elbow";
 	rename -uid "3FC80A2C-4222-9663-D840-AE9B7FE440D8";
 createNode transform -n "R_Elbow_ctl" -p "|R_Elbow";
@@ -9244,6 +9235,18 @@ createNode nurbsCurve -n "Neck_ctlShape" -p "Neck_ctl";
 	rename -uid "705001E6-40AE-E2EA-A97E-819881141804";
 	setAttr -k off ".v";
 	setAttr ".tw" yes;
+createNode transform -n "Neck" -p "Neck_ctl";
+	rename -uid "30AE2D1D-4FFB-7932-9416-1DB7FAC97FD5";
+	setAttr ".t" -type "double3" 0.016934561729431152 -15.382824707031251 0.45075635910034179 ;
+	setAttr ".s" -type "double3" 0.1 0.1 0.1 ;
+	setAttr ".rp" -type "double3" -0.016934561729431152 15.382825469970705 -0.45075636655092244 ;
+	setAttr ".sp" -type "double3" -0.16934561729431152 153.82825469970703 -4.5075636655092239 ;
+	setAttr ".spt" -type "double3" 0.15241105556488038 -138.44542922973633 4.0568072989583017 ;
+createNode clusterHandle -n "NeckShape" -p "|Neck1|Neck_ctl|Neck";
+	rename -uid "11A2ABC1-4DFD-66B8-5FB0-F0B63B7FE933";
+	setAttr ".ihi" 0;
+	setAttr -k off ".v";
+	setAttr ".or" -type "double3" -0.16934561729431152 153.82825469970703 -4.5075636655092239 ;
 createNode transform -n "Waist";
 	rename -uid "A41EFF3E-4C4D-104D-B11A-9B9AE2D8DA3D";
 	setAttr ".t" -type "double3" 0 118.76691197421738 0 ;
@@ -9254,6 +9257,18 @@ createNode nurbsCurve -n "Waist_ctlShape" -p "Waist_ctl";
 	rename -uid "8E7B3855-455A-1A95-8D03-47B1F6839DDF";
 	setAttr -k off ".v";
 	setAttr ".tw" yes;
+createNode transform -n "Torso" -p "Waist_ctl";
+	rename -uid "1DAF2A5B-4C2B-72C5-A289-FDB87A8C4F9A";
+	setAttr ".t" -type "double3" 0 -7.9177941316144915 0 ;
+	setAttr ".s" -type "double3" 0.066666666666666666 0.066666666666666666 0.066666666666666666 ;
+	setAttr ".rp" -type "double3" 0.00032863616943359377 7.8326942443847658 -0.059400145212809244 ;
+	setAttr ".sp" -type "double3" 0.0049295425415039063 117.49041366577148 -0.89100217819213867 ;
+	setAttr ".spt" -type "double3" -0.0046009063720703122 -109.65771942138672 0.83160203297932944 ;
+createNode clusterHandle -n "TorsoShape" -p "Torso";
+	rename -uid "249E0BE1-4F50-34F5-2D20-398DC24CAF76";
+	setAttr ".ihi" 0;
+	setAttr -k off ".v";
+	setAttr ".or" -type "double3" 0.0049295425415039063 117.49041366577148 -0.89100217819213867 ;
 createNode lightLinker -s -n "lightLinker1";
 	rename -uid "606339DD-4077-90EF-6DE2-DE8F68A65136";
 	setAttr -s 10 ".lnk";
@@ -37324,9 +37339,11 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -37334,9 +37351,12 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -37365,6 +37385,7 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -37384,6 +37405,7 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -37425,6 +37447,7 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -37436,6 +37459,7 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -37471,6 +37495,7 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -37498,8 +37523,11 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -37520,6 +37548,7 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -37530,6 +37559,8 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -37548,9 +37579,11 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -37575,6 +37608,7 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -37617,6 +37651,7 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -37634,6 +37669,7 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -37675,6 +37711,7 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -37715,6 +37752,7 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -37741,9 +37779,13 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -37770,37 +37812,10 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -37823,6 +37838,7 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1;
 	setAttr ".wl[500:999].w"
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -37830,10 +37846,12 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -37845,6 +37863,7 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -37852,23 +37871,28 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -37882,6 +37906,7 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -37892,6 +37917,7 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -37906,7 +37932,10 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
+		1 12 0.99999999999999989
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -37915,11 +37944,13 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -37931,6 +37962,7 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -37942,6 +37974,7 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -37953,15 +37986,20 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -37981,12 +38019,17 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -38007,10 +38050,13 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -38037,12 +38083,14 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -38100,6 +38148,7 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -38149,6 +38198,7 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -38168,6 +38218,7 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -38181,11 +38232,13 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -38206,6 +38259,7 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -38244,9 +38298,11 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -38272,48 +38328,7 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -38334,10 +38349,12 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -38357,6 +38374,7 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -38385,6 +38403,7 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -38397,11 +38416,13 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -38450,6 +38471,7 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -38472,6 +38494,7 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -38487,6 +38510,7 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -38529,6 +38553,7 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -38537,6 +38562,8 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -38595,6 +38622,7 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -38622,6 +38650,7 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -38629,15 +38658,18 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -38652,15 +38684,19 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -38683,6 +38719,7 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -38714,6 +38751,7 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -38734,6 +38772,8 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -38744,24 +38784,31 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -38772,11 +38819,13 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -38785,41 +38834,7 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1;
@@ -38830,6 +38845,7 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -38847,6 +38863,7 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -38860,6 +38877,7 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -38874,11 +38892,13 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -38945,6 +38965,7 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -38956,11 +38977,13 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -38969,6 +38992,7 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -38991,6 +39015,7 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -39002,6 +39027,7 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -39016,6 +39042,7 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -39027,7 +39054,9 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -39043,6 +39072,8 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -39076,6 +39107,7 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -39148,6 +39180,7 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -39177,6 +39210,7 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -39208,10 +39242,12 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -39247,8 +39283,10 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -39272,12 +39310,14 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -39289,36 +39329,11 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -39366,14 +39381,20 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
+		1 12 0.99999999999999989
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -39383,6 +39404,7 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -39391,12 +39413,14 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -39420,25 +39444,16 @@ createNode skinCluster -n "skinCluster1";
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
 		1 12 1
 		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
-		1 12 1
+		1 12 0.99999999999999989
 		1 12 1
 		1 12 1
 		1 12 1
@@ -48383,12 +48398,14 @@ select -ne :initialShadingGroup;
 select -ne :initialParticleSE;
 	setAttr ".ro" yes;
 select -ne :defaultRenderGlobals;
+	setAttr ".mcfr" 60;
 	setAttr ".ren" -type "string" "arnold";
 select -ne :defaultResolution;
 	setAttr ".pa" 1;
 select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
+	setAttr ".hwfr" 60;
 select -ne :ikSystem;
 connectAttr "pelvis.di" "SM_Pelvis.do";
 connectAttr "groupParts9.og" "SM_PelvisShape.i";
@@ -48610,31 +48627,6 @@ connectAttr "groupId167.id" "pSphere7Shape.iog.og[1].gid";
 connectAttr "blinn3SG.mwc" "pSphere7Shape.iog.og[1].gco";
 connectAttr "groupId168.id" "pSphere7Shape.iog.og[2].gid";
 connectAttr "blinn2SG.mwc" "pSphere7Shape.iog.og[2].gco";
-connectAttr "Pelvis.s" "R_Hip.is";
-connectAttr "R_Hip.s" "|Pelvis|R_Hip|R_Knee.is";
-connectAttr "|Pelvis|R_Hip|R_Knee.s" "|Pelvis|R_Hip|R_Knee|R_Foot.is";
-connectAttr "|Pelvis|R_Hip|R_Knee|R_Foot.tx" "effector2.tx";
-connectAttr "|Pelvis|R_Hip|R_Knee|R_Foot.ty" "effector2.ty";
-connectAttr "|Pelvis|R_Hip|R_Knee|R_Foot.tz" "effector2.tz";
-connectAttr "Pelvis.s" "L_Hip.is";
-connectAttr "L_Hip.s" "|Pelvis|L_Hip|L_Knee.is";
-connectAttr "|Pelvis|L_Hip|L_Knee.s" "L_Ankle.is";
-connectAttr "L_Ankle.tx" "effector1.tx";
-connectAttr "L_Ankle.ty" "effector1.ty";
-connectAttr "L_Ankle.tz" "effector1.tz";
-connectAttr "Pelvis.s" "Torso1.is";
-connectAttr "Torso1.s" "Chest.is";
-connectAttr "Chest.s" "|Pelvis|Torso1|Chest|Neck.is";
-connectAttr "Chest.s" "|Pelvis|Torso1|Chest|L_Shoulder.is";
-connectAttr "|Pelvis|Torso1|Chest|L_Shoulder.s" "|Pelvis|Torso1|Chest|L_Shoulder|L_Elbow.is"
-		;
-connectAttr "|Pelvis|Torso1|Chest|L_Shoulder|L_Elbow.s" "|Pelvis|Torso1|Chest|L_Shoulder|L_Elbow|L_Wrist.is"
-		;
-connectAttr "Chest.s" "|Pelvis|Torso1|Chest|R_Shoulder.is";
-connectAttr "|Pelvis|Torso1|Chest|R_Shoulder.s" "|Pelvis|Torso1|Chest|R_Shoulder|R_Elbow.is"
-		;
-connectAttr "|Pelvis|Torso1|Chest|R_Shoulder|R_Elbow.s" "|Pelvis|Torso1|Chest|R_Shoulder|R_Elbow|R_Wrist.is"
-		;
 connectAttr "transformGeometry1.og" "L_Leg_ctlShape.cr";
 connectAttr "L_Hip.msg" "|L_LegIK|L_Leg_ctl|L_LegIK.hsj";
 connectAttr "effector1.hp" "|L_LegIK|L_Leg_ctl|L_LegIK.hee";
@@ -48644,6 +48636,39 @@ connectAttr "R_Hip.msg" "|R_LegIK|R_Leg_ctl|R_LegIK.hsj";
 connectAttr "effector2.hp" "|R_LegIK|R_Leg_ctl|R_LegIK.hee";
 connectAttr "ikRPsolver.msg" "|R_LegIK|R_Leg_ctl|R_LegIK.hsv";
 connectAttr "makeNurbCircle3.oc" "Pelvis_ctlShape.cr";
+connectAttr "Pelvis.s" "R_Hip.is";
+connectAttr "R_Hip.s" "|Pelvis1|Pelvis_ctl|transform11|Pelvis|R_Hip|R_Knee.is";
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|R_Hip|R_Knee.s" "|Pelvis1|Pelvis_ctl|transform11|Pelvis|R_Hip|R_Knee|R_Foot.is"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|R_Hip|R_Knee|R_Foot.tx" "effector2.tx"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|R_Hip|R_Knee|R_Foot.ty" "effector2.ty"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|R_Hip|R_Knee|R_Foot.tz" "effector2.tz"
+		;
+connectAttr "Pelvis.s" "L_Hip.is";
+connectAttr "L_Hip.s" "|Pelvis1|Pelvis_ctl|transform11|Pelvis|L_Hip|L_Knee.is";
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|L_Hip|L_Knee.s" "L_Ankle.is"
+		;
+connectAttr "L_Ankle.tx" "effector1.tx";
+connectAttr "L_Ankle.ty" "effector1.ty";
+connectAttr "L_Ankle.tz" "effector1.tz";
+connectAttr "Pelvis.s" "Torso1.is";
+connectAttr "Torso1.s" "Chest.is";
+connectAttr "Chest.s" "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|Neck.is"
+		;
+connectAttr "Chest.s" "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|L_Shoulder.is"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|L_Shoulder.s" "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|L_Shoulder|L_Elbow.is"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|L_Shoulder|L_Elbow.s" "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|L_Shoulder|L_Elbow|L_Wrist.is"
+		;
+connectAttr "Chest.s" "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|R_Shoulder.is"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|R_Shoulder.s" "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|R_Shoulder|R_Elbow.is"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|R_Shoulder|R_Elbow.s" "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|R_Shoulder|R_Elbow|R_Wrist.is"
+		;
 connectAttr "makeNurbCircle5.oc" "L_Shoulder_ctlShape.cr";
 connectAttr "makeNurbCircle6.oc" "L_Wrist_ctlShape.cr";
 connectAttr "makeNurbCircle7.oc" "R_Elbow_ctlShape.cr";
@@ -49070,7 +49095,7 @@ connectAttr "polySeparate1.out[14]" "groupParts27.ig";
 connectAttr "groupId183.id" "groupParts27.gi";
 connectAttr "cluster1GroupParts.og" "NeckCluster.ip[0].ig";
 connectAttr "cluster1GroupId.id" "NeckCluster.ip[0].gi";
-connectAttr "|Neck.wm" "NeckCluster.ma";
+connectAttr "|Neck1|Neck_ctl|Neck.wm" "NeckCluster.ma";
 connectAttr "NeckShape.x" "NeckCluster.x";
 connectAttr "groupParts29.og" "tweak1.ip[0].ig";
 connectAttr "groupId185.id" "tweak1.ip[0].gi";
@@ -49316,35 +49341,46 @@ connectAttr "skinCluster10GroupId.id" "skinCluster10.ip[0].gi";
 connectAttr "Pelvis.wm" "skinCluster10.ma[0]";
 connectAttr "Torso1.wm" "skinCluster10.ma[7]";
 connectAttr "Chest.wm" "skinCluster10.ma[8]";
-connectAttr "|Pelvis|Torso1|Chest|Neck.wm" "skinCluster10.ma[9]";
-connectAttr "|Pelvis|Torso1|Chest|L_Shoulder.wm" "skinCluster10.ma[10]";
-connectAttr "|Pelvis|Torso1|Chest|L_Shoulder|L_Elbow.wm" "skinCluster10.ma[11]";
-connectAttr "|Pelvis|Torso1|Chest|L_Shoulder|L_Elbow|L_Wrist.wm" "skinCluster10.ma[12]"
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|Neck.wm" "skinCluster10.ma[9]"
 		;
-connectAttr "|Pelvis|Torso1|Chest|R_Shoulder.wm" "skinCluster10.ma[13]";
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|L_Shoulder.wm" "skinCluster10.ma[10]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|L_Shoulder|L_Elbow.wm" "skinCluster10.ma[11]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|L_Shoulder|L_Elbow|L_Wrist.wm" "skinCluster10.ma[12]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|R_Shoulder.wm" "skinCluster10.ma[13]"
+		;
 connectAttr "Pelvis.liw" "skinCluster10.lw[0]";
 connectAttr "Torso1.liw" "skinCluster10.lw[7]";
 connectAttr "Chest.liw" "skinCluster10.lw[8]";
-connectAttr "|Pelvis|Torso1|Chest|Neck.liw" "skinCluster10.lw[9]";
-connectAttr "|Pelvis|Torso1|Chest|L_Shoulder.liw" "skinCluster10.lw[10]";
-connectAttr "|Pelvis|Torso1|Chest|L_Shoulder|L_Elbow.liw" "skinCluster10.lw[11]"
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|Neck.liw" "skinCluster10.lw[9]"
 		;
-connectAttr "|Pelvis|Torso1|Chest|L_Shoulder|L_Elbow|L_Wrist.liw" "skinCluster10.lw[12]"
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|L_Shoulder.liw" "skinCluster10.lw[10]"
 		;
-connectAttr "|Pelvis|Torso1|Chest|R_Shoulder.liw" "skinCluster10.lw[13]";
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|L_Shoulder|L_Elbow.liw" "skinCluster10.lw[11]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|L_Shoulder|L_Elbow|L_Wrist.liw" "skinCluster10.lw[12]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|R_Shoulder.liw" "skinCluster10.lw[13]"
+		;
 connectAttr "Pelvis.obcc" "skinCluster10.ifcl[0]";
 connectAttr "Torso1.obcc" "skinCluster10.ifcl[7]";
 connectAttr "Chest.obcc" "skinCluster10.ifcl[8]";
-connectAttr "|Pelvis|Torso1|Chest|Neck.obcc" "skinCluster10.ifcl[9]";
-connectAttr "|Pelvis|Torso1|Chest|L_Shoulder.obcc" "skinCluster10.ifcl[10]";
-connectAttr "|Pelvis|Torso1|Chest|L_Shoulder|L_Elbow.obcc" "skinCluster10.ifcl[11]"
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|Neck.obcc" "skinCluster10.ifcl[9]"
 		;
-connectAttr "|Pelvis|Torso1|Chest|L_Shoulder|L_Elbow|L_Wrist.obcc" "skinCluster10.ifcl[12]"
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|L_Shoulder.obcc" "skinCluster10.ifcl[10]"
 		;
-connectAttr "|Pelvis|Torso1|Chest|R_Shoulder.obcc" "skinCluster10.ifcl[13]";
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|L_Shoulder|L_Elbow.obcc" "skinCluster10.ifcl[11]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|L_Shoulder|L_Elbow|L_Wrist.obcc" "skinCluster10.ifcl[12]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|R_Shoulder.obcc" "skinCluster10.ifcl[13]"
+		;
 connectAttr "bindPose1.msg" "skinCluster10.bp";
 connectAttr "geomBind1.scs" "skinCluster10.gb";
-connectAttr "|Pelvis|Torso1|Chest|L_Shoulder.msg" "skinCluster10.ptt";
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|L_Shoulder.msg" "skinCluster10.ptt"
+		;
 connectAttr "skinCluster10GroupId.msg" "skinCluster10Set.gn" -na;
 connectAttr "polySurfaceShape25.iog.og[4]" "skinCluster10Set.dsm" -na;
 connectAttr "skinCluster10.msg" "skinCluster10Set.ub[0]";
@@ -49352,21 +49388,29 @@ connectAttr "L_ArmCluster.og[0]" "skinCluster10GroupParts.ig";
 connectAttr "skinCluster10GroupId.id" "skinCluster10GroupParts.gi";
 connectAttr "Pelvis.msg" "bindPose1.m[0]";
 connectAttr "R_Hip.msg" "bindPose1.m[1]";
-connectAttr "|Pelvis|R_Hip|R_Knee.msg" "bindPose1.m[2]";
-connectAttr "|Pelvis|R_Hip|R_Knee|R_Foot.msg" "bindPose1.m[3]";
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|R_Hip|R_Knee.msg" "bindPose1.m[2]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|R_Hip|R_Knee|R_Foot.msg" "bindPose1.m[3]"
+		;
 connectAttr "L_Hip.msg" "bindPose1.m[4]";
-connectAttr "|Pelvis|L_Hip|L_Knee.msg" "bindPose1.m[5]";
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|L_Hip|L_Knee.msg" "bindPose1.m[5]"
+		;
 connectAttr "L_Ankle.msg" "bindPose1.m[6]";
 connectAttr "Torso1.msg" "bindPose1.m[7]";
 connectAttr "Chest.msg" "bindPose1.m[8]";
-connectAttr "|Pelvis|Torso1|Chest|Neck.msg" "bindPose1.m[9]";
-connectAttr "|Pelvis|Torso1|Chest|L_Shoulder.msg" "bindPose1.m[10]";
-connectAttr "|Pelvis|Torso1|Chest|L_Shoulder|L_Elbow.msg" "bindPose1.m[11]";
-connectAttr "|Pelvis|Torso1|Chest|L_Shoulder|L_Elbow|L_Wrist.msg" "bindPose1.m[12]"
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|Neck.msg" "bindPose1.m[9]"
 		;
-connectAttr "|Pelvis|Torso1|Chest|R_Shoulder.msg" "bindPose1.m[13]";
-connectAttr "|Pelvis|Torso1|Chest|R_Shoulder|R_Elbow.msg" "bindPose1.m[14]";
-connectAttr "|Pelvis|Torso1|Chest|R_Shoulder|R_Elbow|R_Wrist.msg" "bindPose1.m[15]"
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|L_Shoulder.msg" "bindPose1.m[10]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|L_Shoulder|L_Elbow.msg" "bindPose1.m[11]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|L_Shoulder|L_Elbow|L_Wrist.msg" "bindPose1.m[12]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|R_Shoulder.msg" "bindPose1.m[13]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|R_Shoulder|R_Elbow.msg" "bindPose1.m[14]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|R_Shoulder|R_Elbow|R_Wrist.msg" "bindPose1.m[15]"
 		;
 connectAttr "bindPose1.w" "bindPose1.p[0]";
 connectAttr "bindPose1.m[0]" "bindPose1.p[1]";
@@ -49386,42 +49430,57 @@ connectAttr "bindPose1.m[13]" "bindPose1.p[14]";
 connectAttr "bindPose1.m[14]" "bindPose1.p[15]";
 connectAttr "Pelvis.bps" "bindPose1.wm[0]";
 connectAttr "R_Hip.bps" "bindPose1.wm[1]";
-connectAttr "|Pelvis|R_Hip|R_Knee.bps" "bindPose1.wm[2]";
-connectAttr "|Pelvis|R_Hip|R_Knee|R_Foot.bps" "bindPose1.wm[3]";
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|R_Hip|R_Knee.bps" "bindPose1.wm[2]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|R_Hip|R_Knee|R_Foot.bps" "bindPose1.wm[3]"
+		;
 connectAttr "L_Hip.bps" "bindPose1.wm[4]";
-connectAttr "|Pelvis|L_Hip|L_Knee.bps" "bindPose1.wm[5]";
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|L_Hip|L_Knee.bps" "bindPose1.wm[5]"
+		;
 connectAttr "L_Ankle.bps" "bindPose1.wm[6]";
 connectAttr "Torso1.bps" "bindPose1.wm[7]";
 connectAttr "Chest.bps" "bindPose1.wm[8]";
-connectAttr "|Pelvis|Torso1|Chest|Neck.bps" "bindPose1.wm[9]";
-connectAttr "|Pelvis|Torso1|Chest|L_Shoulder.bps" "bindPose1.wm[10]";
-connectAttr "|Pelvis|Torso1|Chest|L_Shoulder|L_Elbow.bps" "bindPose1.wm[11]";
-connectAttr "|Pelvis|Torso1|Chest|L_Shoulder|L_Elbow|L_Wrist.bps" "bindPose1.wm[12]"
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|Neck.bps" "bindPose1.wm[9]"
 		;
-connectAttr "|Pelvis|Torso1|Chest|R_Shoulder.bps" "bindPose1.wm[13]";
-connectAttr "|Pelvis|Torso1|Chest|R_Shoulder|R_Elbow.bps" "bindPose1.wm[14]";
-connectAttr "|Pelvis|Torso1|Chest|R_Shoulder|R_Elbow|R_Wrist.bps" "bindPose1.wm[15]"
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|L_Shoulder.bps" "bindPose1.wm[10]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|L_Shoulder|L_Elbow.bps" "bindPose1.wm[11]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|L_Shoulder|L_Elbow|L_Wrist.bps" "bindPose1.wm[12]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|R_Shoulder.bps" "bindPose1.wm[13]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|R_Shoulder|R_Elbow.bps" "bindPose1.wm[14]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|R_Shoulder|R_Elbow|R_Wrist.bps" "bindPose1.wm[15]"
 		;
 connectAttr "skinCluster6GroupParts.og" "skinCluster6.ip[0].ig";
 connectAttr "skinCluster6GroupId.id" "skinCluster6.ip[0].gi";
 connectAttr "Pelvis.wm" "skinCluster6.ma[0]";
 connectAttr "R_Hip.wm" "skinCluster6.ma[1]";
-connectAttr "|Pelvis|R_Hip|R_Knee.wm" "skinCluster6.ma[2]";
-connectAttr "|Pelvis|R_Hip|R_Knee|R_Foot.wm" "skinCluster6.ma[3]";
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|R_Hip|R_Knee.wm" "skinCluster6.ma[2]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|R_Hip|R_Knee|R_Foot.wm" "skinCluster6.ma[3]"
+		;
 connectAttr "L_Hip.wm" "skinCluster6.ma[4]";
 connectAttr "Pelvis.liw" "skinCluster6.lw[0]";
 connectAttr "R_Hip.liw" "skinCluster6.lw[1]";
-connectAttr "|Pelvis|R_Hip|R_Knee.liw" "skinCluster6.lw[2]";
-connectAttr "|Pelvis|R_Hip|R_Knee|R_Foot.liw" "skinCluster6.lw[3]";
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|R_Hip|R_Knee.liw" "skinCluster6.lw[2]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|R_Hip|R_Knee|R_Foot.liw" "skinCluster6.lw[3]"
+		;
 connectAttr "L_Hip.liw" "skinCluster6.lw[4]";
 connectAttr "Pelvis.obcc" "skinCluster6.ifcl[0]";
 connectAttr "R_Hip.obcc" "skinCluster6.ifcl[1]";
-connectAttr "|Pelvis|R_Hip|R_Knee.obcc" "skinCluster6.ifcl[2]";
-connectAttr "|Pelvis|R_Hip|R_Knee|R_Foot.obcc" "skinCluster6.ifcl[3]";
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|R_Hip|R_Knee.obcc" "skinCluster6.ifcl[2]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|R_Hip|R_Knee|R_Foot.obcc" "skinCluster6.ifcl[3]"
+		;
 connectAttr "L_Hip.obcc" "skinCluster6.ifcl[4]";
 connectAttr "bindPose1.msg" "skinCluster6.bp";
 connectAttr "geomBind1.scs" "skinCluster6.gb";
-connectAttr "|Pelvis|R_Hip|R_Knee.msg" "skinCluster6.ptt";
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|R_Hip|R_Knee.msg" "skinCluster6.ptt"
+		;
 connectAttr "skinCluster6GroupId.msg" "skinCluster6Set.gn" -na;
 connectAttr "polySurfaceShape21.iog.og[4]" "skinCluster6Set.dsm" -na;
 connectAttr "skinCluster6.msg" "skinCluster6Set.ub[0]";
@@ -49433,21 +49492,25 @@ connectAttr "skinCluster5GroupId.id" "skinCluster5.ip[0].gi";
 connectAttr "Pelvis.wm" "skinCluster5.ma[0]";
 connectAttr "R_Hip.wm" "skinCluster5.ma[1]";
 connectAttr "L_Hip.wm" "skinCluster5.ma[4]";
-connectAttr "|Pelvis|L_Hip|L_Knee.wm" "skinCluster5.ma[5]";
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|L_Hip|L_Knee.wm" "skinCluster5.ma[5]"
+		;
 connectAttr "L_Ankle.wm" "skinCluster5.ma[6]";
 connectAttr "Pelvis.liw" "skinCluster5.lw[0]";
 connectAttr "R_Hip.liw" "skinCluster5.lw[1]";
 connectAttr "L_Hip.liw" "skinCluster5.lw[4]";
-connectAttr "|Pelvis|L_Hip|L_Knee.liw" "skinCluster5.lw[5]";
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|L_Hip|L_Knee.liw" "skinCluster5.lw[5]"
+		;
 connectAttr "L_Ankle.liw" "skinCluster5.lw[6]";
 connectAttr "Pelvis.obcc" "skinCluster5.ifcl[0]";
 connectAttr "R_Hip.obcc" "skinCluster5.ifcl[1]";
 connectAttr "L_Hip.obcc" "skinCluster5.ifcl[4]";
-connectAttr "|Pelvis|L_Hip|L_Knee.obcc" "skinCluster5.ifcl[5]";
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|L_Hip|L_Knee.obcc" "skinCluster5.ifcl[5]"
+		;
 connectAttr "L_Ankle.obcc" "skinCluster5.ifcl[6]";
 connectAttr "bindPose1.msg" "skinCluster5.bp";
 connectAttr "geomBind1.scs" "skinCluster5.gb";
-connectAttr "|Pelvis|L_Hip|L_Knee.msg" "skinCluster5.ptt";
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|L_Hip|L_Knee.msg" "skinCluster5.ptt"
+		;
 connectAttr "skinCluster5GroupId.msg" "skinCluster5Set.gn" -na;
 connectAttr "polySurfaceShape20.iog.og[8]" "skinCluster5Set.dsm" -na;
 connectAttr "skinCluster5.msg" "skinCluster5Set.ub[0]";
@@ -49458,19 +49521,22 @@ connectAttr "skinCluster7GroupId.id" "skinCluster7.ip[0].gi";
 connectAttr "Pelvis.wm" "skinCluster7.ma[0]";
 connectAttr "R_Hip.wm" "skinCluster7.ma[1]";
 connectAttr "L_Hip.wm" "skinCluster7.ma[4]";
-connectAttr "|Pelvis|L_Hip|L_Knee.wm" "skinCluster7.ma[5]";
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|L_Hip|L_Knee.wm" "skinCluster7.ma[5]"
+		;
 connectAttr "L_Ankle.wm" "skinCluster7.ma[6]";
 connectAttr "Torso1.wm" "skinCluster7.ma[7]";
 connectAttr "Pelvis.liw" "skinCluster7.lw[0]";
 connectAttr "R_Hip.liw" "skinCluster7.lw[1]";
 connectAttr "L_Hip.liw" "skinCluster7.lw[4]";
-connectAttr "|Pelvis|L_Hip|L_Knee.liw" "skinCluster7.lw[5]";
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|L_Hip|L_Knee.liw" "skinCluster7.lw[5]"
+		;
 connectAttr "L_Ankle.liw" "skinCluster7.lw[6]";
 connectAttr "Torso1.liw" "skinCluster7.lw[7]";
 connectAttr "Pelvis.obcc" "skinCluster7.ifcl[0]";
 connectAttr "R_Hip.obcc" "skinCluster7.ifcl[1]";
 connectAttr "L_Hip.obcc" "skinCluster7.ifcl[4]";
-connectAttr "|Pelvis|L_Hip|L_Knee.obcc" "skinCluster7.ifcl[5]";
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|L_Hip|L_Knee.obcc" "skinCluster7.ifcl[5]"
+		;
 connectAttr "L_Ankle.obcc" "skinCluster7.ifcl[6]";
 connectAttr "Torso1.obcc" "skinCluster7.ifcl[7]";
 connectAttr "bindPose1.msg" "skinCluster7.bp";
@@ -49485,20 +49551,26 @@ connectAttr "skinCluster8GroupParts.og" "skinCluster8.ip[0].ig";
 connectAttr "skinCluster8GroupId.id" "skinCluster8.ip[0].gi";
 connectAttr "Pelvis.wm" "skinCluster8.ma[0]";
 connectAttr "R_Hip.wm" "skinCluster8.ma[1]";
-connectAttr "|Pelvis|R_Hip|R_Knee.wm" "skinCluster8.ma[2]";
-connectAttr "|Pelvis|R_Hip|R_Knee|R_Foot.wm" "skinCluster8.ma[3]";
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|R_Hip|R_Knee.wm" "skinCluster8.ma[2]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|R_Hip|R_Knee|R_Foot.wm" "skinCluster8.ma[3]"
+		;
 connectAttr "L_Hip.wm" "skinCluster8.ma[4]";
 connectAttr "Torso1.wm" "skinCluster8.ma[7]";
 connectAttr "Pelvis.liw" "skinCluster8.lw[0]";
 connectAttr "R_Hip.liw" "skinCluster8.lw[1]";
-connectAttr "|Pelvis|R_Hip|R_Knee.liw" "skinCluster8.lw[2]";
-connectAttr "|Pelvis|R_Hip|R_Knee|R_Foot.liw" "skinCluster8.lw[3]";
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|R_Hip|R_Knee.liw" "skinCluster8.lw[2]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|R_Hip|R_Knee|R_Foot.liw" "skinCluster8.lw[3]"
+		;
 connectAttr "L_Hip.liw" "skinCluster8.lw[4]";
 connectAttr "Torso1.liw" "skinCluster8.lw[7]";
 connectAttr "Pelvis.obcc" "skinCluster8.ifcl[0]";
 connectAttr "R_Hip.obcc" "skinCluster8.ifcl[1]";
-connectAttr "|Pelvis|R_Hip|R_Knee.obcc" "skinCluster8.ifcl[2]";
-connectAttr "|Pelvis|R_Hip|R_Knee|R_Foot.obcc" "skinCluster8.ifcl[3]";
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|R_Hip|R_Knee.obcc" "skinCluster8.ifcl[2]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|R_Hip|R_Knee|R_Foot.obcc" "skinCluster8.ifcl[3]"
+		;
 connectAttr "L_Hip.obcc" "skinCluster8.ifcl[4]";
 connectAttr "Torso1.obcc" "skinCluster8.ifcl[7]";
 connectAttr "bindPose1.msg" "skinCluster8.bp";
@@ -49514,17 +49586,20 @@ connectAttr "skinCluster3GroupId.id" "skinCluster3.ip[0].gi";
 connectAttr "Pelvis.wm" "skinCluster3.ma[0]";
 connectAttr "R_Hip.wm" "skinCluster3.ma[1]";
 connectAttr "L_Hip.wm" "skinCluster3.ma[4]";
-connectAttr "|Pelvis|L_Hip|L_Knee.wm" "skinCluster3.ma[5]";
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|L_Hip|L_Knee.wm" "skinCluster3.ma[5]"
+		;
 connectAttr "L_Ankle.wm" "skinCluster3.ma[6]";
 connectAttr "Pelvis.liw" "skinCluster3.lw[0]";
 connectAttr "R_Hip.liw" "skinCluster3.lw[1]";
 connectAttr "L_Hip.liw" "skinCluster3.lw[4]";
-connectAttr "|Pelvis|L_Hip|L_Knee.liw" "skinCluster3.lw[5]";
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|L_Hip|L_Knee.liw" "skinCluster3.lw[5]"
+		;
 connectAttr "L_Ankle.liw" "skinCluster3.lw[6]";
 connectAttr "Pelvis.obcc" "skinCluster3.ifcl[0]";
 connectAttr "R_Hip.obcc" "skinCluster3.ifcl[1]";
 connectAttr "L_Hip.obcc" "skinCluster3.ifcl[4]";
-connectAttr "|Pelvis|L_Hip|L_Knee.obcc" "skinCluster3.ifcl[5]";
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|L_Hip|L_Knee.obcc" "skinCluster3.ifcl[5]"
+		;
 connectAttr "L_Ankle.obcc" "skinCluster3.ifcl[6]";
 connectAttr "bindPose1.msg" "skinCluster3.bp";
 connectAttr "geomBind1.scs" "skinCluster3.gb";
@@ -49538,22 +49613,29 @@ connectAttr "skinCluster4GroupParts.og" "skinCluster4.ip[0].ig";
 connectAttr "skinCluster4GroupId.id" "skinCluster4.ip[0].gi";
 connectAttr "Pelvis.wm" "skinCluster4.ma[0]";
 connectAttr "R_Hip.wm" "skinCluster4.ma[1]";
-connectAttr "|Pelvis|R_Hip|R_Knee.wm" "skinCluster4.ma[2]";
-connectAttr "|Pelvis|R_Hip|R_Knee|R_Foot.wm" "skinCluster4.ma[3]";
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|R_Hip|R_Knee.wm" "skinCluster4.ma[2]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|R_Hip|R_Knee|R_Foot.wm" "skinCluster4.ma[3]"
+		;
 connectAttr "L_Hip.wm" "skinCluster4.ma[4]";
 connectAttr "Pelvis.liw" "skinCluster4.lw[0]";
 connectAttr "R_Hip.liw" "skinCluster4.lw[1]";
-connectAttr "|Pelvis|R_Hip|R_Knee.liw" "skinCluster4.lw[2]";
-connectAttr "|Pelvis|R_Hip|R_Knee|R_Foot.liw" "skinCluster4.lw[3]";
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|R_Hip|R_Knee.liw" "skinCluster4.lw[2]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|R_Hip|R_Knee|R_Foot.liw" "skinCluster4.lw[3]"
+		;
 connectAttr "L_Hip.liw" "skinCluster4.lw[4]";
 connectAttr "Pelvis.obcc" "skinCluster4.ifcl[0]";
 connectAttr "R_Hip.obcc" "skinCluster4.ifcl[1]";
-connectAttr "|Pelvis|R_Hip|R_Knee.obcc" "skinCluster4.ifcl[2]";
-connectAttr "|Pelvis|R_Hip|R_Knee|R_Foot.obcc" "skinCluster4.ifcl[3]";
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|R_Hip|R_Knee.obcc" "skinCluster4.ifcl[2]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|R_Hip|R_Knee|R_Foot.obcc" "skinCluster4.ifcl[3]"
+		;
 connectAttr "L_Hip.obcc" "skinCluster4.ifcl[4]";
 connectAttr "bindPose1.msg" "skinCluster4.bp";
 connectAttr "geomBind1.scs" "skinCluster4.gb";
-connectAttr "|Pelvis|R_Hip|R_Knee|R_Foot.msg" "skinCluster4.ptt";
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|R_Hip|R_Knee|R_Foot.msg" "skinCluster4.ptt"
+		;
 connectAttr "skinCluster4GroupId.msg" "skinCluster4Set.gn" -na;
 connectAttr "polySurfaceShape19.iog.og[4]" "skinCluster4Set.dsm" -na;
 connectAttr "skinCluster4.msg" "skinCluster4Set.ub[0]";
@@ -49566,34 +49648,45 @@ connectAttr "R_Hip.wm" "skinCluster14.ma[1]";
 connectAttr "L_Hip.wm" "skinCluster14.ma[4]";
 connectAttr "Torso1.wm" "skinCluster14.ma[7]";
 connectAttr "Chest.wm" "skinCluster14.ma[8]";
-connectAttr "|Pelvis|Torso1|Chest|Neck.wm" "skinCluster14.ma[9]";
-connectAttr "|Pelvis|Torso1|Chest|L_Shoulder.wm" "skinCluster14.ma[10]";
-connectAttr "|Pelvis|Torso1|Chest|L_Shoulder|L_Elbow.wm" "skinCluster14.ma[11]";
-connectAttr "|Pelvis|Torso1|Chest|R_Shoulder.wm" "skinCluster14.ma[13]";
-connectAttr "|Pelvis|Torso1|Chest|R_Shoulder|R_Elbow.wm" "skinCluster14.ma[14]";
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|Neck.wm" "skinCluster14.ma[9]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|L_Shoulder.wm" "skinCluster14.ma[10]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|L_Shoulder|L_Elbow.wm" "skinCluster14.ma[11]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|R_Shoulder.wm" "skinCluster14.ma[13]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|R_Shoulder|R_Elbow.wm" "skinCluster14.ma[14]"
+		;
 connectAttr "Pelvis.liw" "skinCluster14.lw[0]";
 connectAttr "R_Hip.liw" "skinCluster14.lw[1]";
 connectAttr "L_Hip.liw" "skinCluster14.lw[4]";
 connectAttr "Torso1.liw" "skinCluster14.lw[7]";
 connectAttr "Chest.liw" "skinCluster14.lw[8]";
-connectAttr "|Pelvis|Torso1|Chest|Neck.liw" "skinCluster14.lw[9]";
-connectAttr "|Pelvis|Torso1|Chest|L_Shoulder.liw" "skinCluster14.lw[10]";
-connectAttr "|Pelvis|Torso1|Chest|L_Shoulder|L_Elbow.liw" "skinCluster14.lw[11]"
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|Neck.liw" "skinCluster14.lw[9]"
 		;
-connectAttr "|Pelvis|Torso1|Chest|R_Shoulder.liw" "skinCluster14.lw[13]";
-connectAttr "|Pelvis|Torso1|Chest|R_Shoulder|R_Elbow.liw" "skinCluster14.lw[14]"
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|L_Shoulder.liw" "skinCluster14.lw[10]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|L_Shoulder|L_Elbow.liw" "skinCluster14.lw[11]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|R_Shoulder.liw" "skinCluster14.lw[13]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|R_Shoulder|R_Elbow.liw" "skinCluster14.lw[14]"
 		;
 connectAttr "Pelvis.obcc" "skinCluster14.ifcl[0]";
 connectAttr "R_Hip.obcc" "skinCluster14.ifcl[1]";
 connectAttr "L_Hip.obcc" "skinCluster14.ifcl[4]";
 connectAttr "Torso1.obcc" "skinCluster14.ifcl[7]";
 connectAttr "Chest.obcc" "skinCluster14.ifcl[8]";
-connectAttr "|Pelvis|Torso1|Chest|Neck.obcc" "skinCluster14.ifcl[9]";
-connectAttr "|Pelvis|Torso1|Chest|L_Shoulder.obcc" "skinCluster14.ifcl[10]";
-connectAttr "|Pelvis|Torso1|Chest|L_Shoulder|L_Elbow.obcc" "skinCluster14.ifcl[11]"
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|Neck.obcc" "skinCluster14.ifcl[9]"
 		;
-connectAttr "|Pelvis|Torso1|Chest|R_Shoulder.obcc" "skinCluster14.ifcl[13]";
-connectAttr "|Pelvis|Torso1|Chest|R_Shoulder|R_Elbow.obcc" "skinCluster14.ifcl[14]"
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|L_Shoulder.obcc" "skinCluster14.ifcl[10]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|L_Shoulder|L_Elbow.obcc" "skinCluster14.ifcl[11]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|R_Shoulder.obcc" "skinCluster14.ifcl[13]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|R_Shoulder|R_Elbow.obcc" "skinCluster14.ifcl[14]"
 		;
 connectAttr "bindPose1.msg" "skinCluster14.bp";
 connectAttr "geomBind1.scs" "skinCluster14.gb";
@@ -49607,23 +49700,29 @@ connectAttr "skinCluster15GroupParts.og" "skinCluster15.ip[0].ig";
 connectAttr "skinCluster15GroupId.id" "skinCluster15.ip[0].gi";
 connectAttr "Pelvis.wm" "skinCluster15.ma[0]";
 connectAttr "R_Hip.wm" "skinCluster15.ma[1]";
-connectAttr "|Pelvis|R_Hip|R_Knee.wm" "skinCluster15.ma[2]";
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|R_Hip|R_Knee.wm" "skinCluster15.ma[2]"
+		;
 connectAttr "L_Hip.wm" "skinCluster15.ma[4]";
-connectAttr "|Pelvis|L_Hip|L_Knee.wm" "skinCluster15.ma[5]";
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|L_Hip|L_Knee.wm" "skinCluster15.ma[5]"
+		;
 connectAttr "Torso1.wm" "skinCluster15.ma[7]";
 connectAttr "Chest.wm" "skinCluster15.ma[8]";
 connectAttr "Pelvis.liw" "skinCluster15.lw[0]";
 connectAttr "R_Hip.liw" "skinCluster15.lw[1]";
-connectAttr "|Pelvis|R_Hip|R_Knee.liw" "skinCluster15.lw[2]";
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|R_Hip|R_Knee.liw" "skinCluster15.lw[2]"
+		;
 connectAttr "L_Hip.liw" "skinCluster15.lw[4]";
-connectAttr "|Pelvis|L_Hip|L_Knee.liw" "skinCluster15.lw[5]";
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|L_Hip|L_Knee.liw" "skinCluster15.lw[5]"
+		;
 connectAttr "Torso1.liw" "skinCluster15.lw[7]";
 connectAttr "Chest.liw" "skinCluster15.lw[8]";
 connectAttr "Pelvis.obcc" "skinCluster15.ifcl[0]";
 connectAttr "R_Hip.obcc" "skinCluster15.ifcl[1]";
-connectAttr "|Pelvis|R_Hip|R_Knee.obcc" "skinCluster15.ifcl[2]";
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|R_Hip|R_Knee.obcc" "skinCluster15.ifcl[2]"
+		;
 connectAttr "L_Hip.obcc" "skinCluster15.ifcl[4]";
-connectAttr "|Pelvis|L_Hip|L_Knee.obcc" "skinCluster15.ifcl[5]";
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|L_Hip|L_Knee.obcc" "skinCluster15.ifcl[5]"
+		;
 connectAttr "Torso1.obcc" "skinCluster15.ifcl[7]";
 connectAttr "Chest.obcc" "skinCluster15.ifcl[8]";
 connectAttr "bindPose1.msg" "skinCluster15.bp";
@@ -49638,22 +49737,32 @@ connectAttr "skinCluster9GroupParts.og" "skinCluster9.ip[0].ig";
 connectAttr "skinCluster9GroupId.id" "skinCluster9.ip[0].gi";
 connectAttr "Torso1.wm" "skinCluster9.ma[7]";
 connectAttr "Chest.wm" "skinCluster9.ma[8]";
-connectAttr "|Pelvis|Torso1|Chest|Neck.wm" "skinCluster9.ma[9]";
-connectAttr "|Pelvis|Torso1|Chest|L_Shoulder.wm" "skinCluster9.ma[10]";
-connectAttr "|Pelvis|Torso1|Chest|R_Shoulder.wm" "skinCluster9.ma[13]";
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|Neck.wm" "skinCluster9.ma[9]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|L_Shoulder.wm" "skinCluster9.ma[10]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|R_Shoulder.wm" "skinCluster9.ma[13]"
+		;
 connectAttr "Torso1.liw" "skinCluster9.lw[7]";
 connectAttr "Chest.liw" "skinCluster9.lw[8]";
-connectAttr "|Pelvis|Torso1|Chest|Neck.liw" "skinCluster9.lw[9]";
-connectAttr "|Pelvis|Torso1|Chest|L_Shoulder.liw" "skinCluster9.lw[10]";
-connectAttr "|Pelvis|Torso1|Chest|R_Shoulder.liw" "skinCluster9.lw[13]";
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|Neck.liw" "skinCluster9.lw[9]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|L_Shoulder.liw" "skinCluster9.lw[10]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|R_Shoulder.liw" "skinCluster9.lw[13]"
+		;
 connectAttr "Torso1.obcc" "skinCluster9.ifcl[7]";
 connectAttr "Chest.obcc" "skinCluster9.ifcl[8]";
-connectAttr "|Pelvis|Torso1|Chest|Neck.obcc" "skinCluster9.ifcl[9]";
-connectAttr "|Pelvis|Torso1|Chest|L_Shoulder.obcc" "skinCluster9.ifcl[10]";
-connectAttr "|Pelvis|Torso1|Chest|R_Shoulder.obcc" "skinCluster9.ifcl[13]";
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|Neck.obcc" "skinCluster9.ifcl[9]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|L_Shoulder.obcc" "skinCluster9.ifcl[10]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|R_Shoulder.obcc" "skinCluster9.ifcl[13]"
+		;
 connectAttr "bindPose1.msg" "skinCluster9.bp";
 connectAttr "geomBind1.scs" "skinCluster9.gb";
-connectAttr "|Pelvis|Torso1|Chest|Neck.msg" "skinCluster9.ptt";
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|Neck.msg" "skinCluster9.ptt"
+		;
 connectAttr "skinCluster9GroupId.msg" "skinCluster9Set.gn" -na;
 connectAttr "polySurfaceShape24.iog.og[4]" "skinCluster9Set.dsm" -na;
 connectAttr "skinCluster9.msg" "skinCluster9Set.ub[0]";
@@ -49664,25 +49773,30 @@ connectAttr "skinCluster1GroupId.id" "skinCluster1.ip[0].gi";
 connectAttr "bindPose1.msg" "skinCluster1.bp";
 connectAttr "Torso1.wm" "skinCluster1.ma[7]";
 connectAttr "Chest.wm" "skinCluster1.ma[8]";
-connectAttr "|Pelvis|Torso1|Chest|L_Shoulder.wm" "skinCluster1.ma[10]";
-connectAttr "|Pelvis|Torso1|Chest|L_Shoulder|L_Elbow.wm" "skinCluster1.ma[11]";
-connectAttr "|Pelvis|Torso1|Chest|L_Shoulder|L_Elbow|L_Wrist.wm" "skinCluster1.ma[12]"
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|L_Shoulder.wm" "skinCluster1.ma[10]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|L_Shoulder|L_Elbow.wm" "skinCluster1.ma[11]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|L_Shoulder|L_Elbow|L_Wrist.wm" "skinCluster1.ma[12]"
 		;
 connectAttr "Torso1.liw" "skinCluster1.lw[7]";
 connectAttr "Chest.liw" "skinCluster1.lw[8]";
-connectAttr "|Pelvis|Torso1|Chest|L_Shoulder.liw" "skinCluster1.lw[10]";
-connectAttr "|Pelvis|Torso1|Chest|L_Shoulder|L_Elbow.liw" "skinCluster1.lw[11]";
-connectAttr "|Pelvis|Torso1|Chest|L_Shoulder|L_Elbow|L_Wrist.liw" "skinCluster1.lw[12]"
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|L_Shoulder.liw" "skinCluster1.lw[10]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|L_Shoulder|L_Elbow.liw" "skinCluster1.lw[11]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|L_Shoulder|L_Elbow|L_Wrist.liw" "skinCluster1.lw[12]"
 		;
 connectAttr "Torso1.obcc" "skinCluster1.ifcl[7]";
 connectAttr "Chest.obcc" "skinCluster1.ifcl[8]";
-connectAttr "|Pelvis|Torso1|Chest|L_Shoulder.obcc" "skinCluster1.ifcl[10]";
-connectAttr "|Pelvis|Torso1|Chest|L_Shoulder|L_Elbow.obcc" "skinCluster1.ifcl[11]"
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|L_Shoulder.obcc" "skinCluster1.ifcl[10]"
 		;
-connectAttr "|Pelvis|Torso1|Chest|L_Shoulder|L_Elbow|L_Wrist.obcc" "skinCluster1.ifcl[12]"
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|L_Shoulder|L_Elbow.obcc" "skinCluster1.ifcl[11]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|L_Shoulder|L_Elbow|L_Wrist.obcc" "skinCluster1.ifcl[12]"
 		;
 connectAttr "geomBind1.scs" "skinCluster1.gb";
-connectAttr "|Pelvis|Torso1|Chest|L_Shoulder|L_Elbow|L_Wrist.msg" "skinCluster1.ptt"
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|L_Shoulder|L_Elbow|L_Wrist.msg" "skinCluster1.ptt"
 		;
 connectAttr "skinCluster1GroupId.msg" "skinCluster1Set.gn" -na;
 connectAttr "polySurfaceShape16.iog.og[4]" "skinCluster1Set.dsm" -na;
@@ -49693,26 +49807,31 @@ connectAttr "skinCluster2GroupParts.og" "skinCluster2.ip[0].ig";
 connectAttr "skinCluster2GroupId.id" "skinCluster2.ip[0].gi";
 connectAttr "Torso1.wm" "skinCluster2.ma[7]";
 connectAttr "Chest.wm" "skinCluster2.ma[8]";
-connectAttr "|Pelvis|Torso1|Chest|R_Shoulder.wm" "skinCluster2.ma[13]";
-connectAttr "|Pelvis|Torso1|Chest|R_Shoulder|R_Elbow.wm" "skinCluster2.ma[14]";
-connectAttr "|Pelvis|Torso1|Chest|R_Shoulder|R_Elbow|R_Wrist.wm" "skinCluster2.ma[15]"
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|R_Shoulder.wm" "skinCluster2.ma[13]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|R_Shoulder|R_Elbow.wm" "skinCluster2.ma[14]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|R_Shoulder|R_Elbow|R_Wrist.wm" "skinCluster2.ma[15]"
 		;
 connectAttr "Torso1.liw" "skinCluster2.lw[7]";
 connectAttr "Chest.liw" "skinCluster2.lw[8]";
-connectAttr "|Pelvis|Torso1|Chest|R_Shoulder.liw" "skinCluster2.lw[13]";
-connectAttr "|Pelvis|Torso1|Chest|R_Shoulder|R_Elbow.liw" "skinCluster2.lw[14]";
-connectAttr "|Pelvis|Torso1|Chest|R_Shoulder|R_Elbow|R_Wrist.liw" "skinCluster2.lw[15]"
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|R_Shoulder.liw" "skinCluster2.lw[13]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|R_Shoulder|R_Elbow.liw" "skinCluster2.lw[14]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|R_Shoulder|R_Elbow|R_Wrist.liw" "skinCluster2.lw[15]"
 		;
 connectAttr "Torso1.obcc" "skinCluster2.ifcl[7]";
 connectAttr "Chest.obcc" "skinCluster2.ifcl[8]";
-connectAttr "|Pelvis|Torso1|Chest|R_Shoulder.obcc" "skinCluster2.ifcl[13]";
-connectAttr "|Pelvis|Torso1|Chest|R_Shoulder|R_Elbow.obcc" "skinCluster2.ifcl[14]"
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|R_Shoulder.obcc" "skinCluster2.ifcl[13]"
 		;
-connectAttr "|Pelvis|Torso1|Chest|R_Shoulder|R_Elbow|R_Wrist.obcc" "skinCluster2.ifcl[15]"
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|R_Shoulder|R_Elbow.obcc" "skinCluster2.ifcl[14]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|R_Shoulder|R_Elbow|R_Wrist.obcc" "skinCluster2.ifcl[15]"
 		;
 connectAttr "bindPose1.msg" "skinCluster2.bp";
 connectAttr "geomBind1.scs" "skinCluster2.gb";
-connectAttr "|Pelvis|Torso1|Chest|R_Shoulder|R_Elbow|R_Wrist.msg" "skinCluster2.ptt"
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|R_Shoulder|R_Elbow|R_Wrist.msg" "skinCluster2.ptt"
 		;
 connectAttr "skinCluster2GroupId.msg" "skinCluster2Set.gn" -na;
 connectAttr "polySurfaceShape17.iog.og[4]" "skinCluster2Set.dsm" -na;
@@ -49723,33 +49842,44 @@ connectAttr "skinCluster11GroupParts.og" "skinCluster11.ip[0].ig";
 connectAttr "skinCluster11GroupId.id" "skinCluster11.ip[0].gi";
 connectAttr "Torso1.wm" "skinCluster11.ma[7]";
 connectAttr "Chest.wm" "skinCluster11.ma[8]";
-connectAttr "|Pelvis|Torso1|Chest|Neck.wm" "skinCluster11.ma[9]";
-connectAttr "|Pelvis|Torso1|Chest|L_Shoulder.wm" "skinCluster11.ma[10]";
-connectAttr "|Pelvis|Torso1|Chest|R_Shoulder.wm" "skinCluster11.ma[13]";
-connectAttr "|Pelvis|Torso1|Chest|R_Shoulder|R_Elbow.wm" "skinCluster11.ma[14]";
-connectAttr "|Pelvis|Torso1|Chest|R_Shoulder|R_Elbow|R_Wrist.wm" "skinCluster11.ma[15]"
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|Neck.wm" "skinCluster11.ma[9]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|L_Shoulder.wm" "skinCluster11.ma[10]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|R_Shoulder.wm" "skinCluster11.ma[13]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|R_Shoulder|R_Elbow.wm" "skinCluster11.ma[14]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|R_Shoulder|R_Elbow|R_Wrist.wm" "skinCluster11.ma[15]"
 		;
 connectAttr "Torso1.liw" "skinCluster11.lw[7]";
 connectAttr "Chest.liw" "skinCluster11.lw[8]";
-connectAttr "|Pelvis|Torso1|Chest|Neck.liw" "skinCluster11.lw[9]";
-connectAttr "|Pelvis|Torso1|Chest|L_Shoulder.liw" "skinCluster11.lw[10]";
-connectAttr "|Pelvis|Torso1|Chest|R_Shoulder.liw" "skinCluster11.lw[13]";
-connectAttr "|Pelvis|Torso1|Chest|R_Shoulder|R_Elbow.liw" "skinCluster11.lw[14]"
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|Neck.liw" "skinCluster11.lw[9]"
 		;
-connectAttr "|Pelvis|Torso1|Chest|R_Shoulder|R_Elbow|R_Wrist.liw" "skinCluster11.lw[15]"
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|L_Shoulder.liw" "skinCluster11.lw[10]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|R_Shoulder.liw" "skinCluster11.lw[13]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|R_Shoulder|R_Elbow.liw" "skinCluster11.lw[14]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|R_Shoulder|R_Elbow|R_Wrist.liw" "skinCluster11.lw[15]"
 		;
 connectAttr "Torso1.obcc" "skinCluster11.ifcl[7]";
 connectAttr "Chest.obcc" "skinCluster11.ifcl[8]";
-connectAttr "|Pelvis|Torso1|Chest|Neck.obcc" "skinCluster11.ifcl[9]";
-connectAttr "|Pelvis|Torso1|Chest|L_Shoulder.obcc" "skinCluster11.ifcl[10]";
-connectAttr "|Pelvis|Torso1|Chest|R_Shoulder.obcc" "skinCluster11.ifcl[13]";
-connectAttr "|Pelvis|Torso1|Chest|R_Shoulder|R_Elbow.obcc" "skinCluster11.ifcl[14]"
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|Neck.obcc" "skinCluster11.ifcl[9]"
 		;
-connectAttr "|Pelvis|Torso1|Chest|R_Shoulder|R_Elbow|R_Wrist.obcc" "skinCluster11.ifcl[15]"
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|L_Shoulder.obcc" "skinCluster11.ifcl[10]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|R_Shoulder.obcc" "skinCluster11.ifcl[13]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|R_Shoulder|R_Elbow.obcc" "skinCluster11.ifcl[14]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|R_Shoulder|R_Elbow|R_Wrist.obcc" "skinCluster11.ifcl[15]"
 		;
 connectAttr "bindPose1.msg" "skinCluster11.bp";
 connectAttr "geomBind1.scs" "skinCluster11.gb";
-connectAttr "|Pelvis|Torso1|Chest|R_Shoulder.msg" "skinCluster11.ptt";
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|R_Shoulder.msg" "skinCluster11.ptt"
+		;
 connectAttr "skinCluster11GroupId.msg" "skinCluster11Set.gn" -na;
 connectAttr "polySurfaceShape26.iog.og[4]" "skinCluster11Set.dsm" -na;
 connectAttr "skinCluster11.msg" "skinCluster11Set.ub[0]";
@@ -49759,27 +49889,32 @@ connectAttr "skinCluster12GroupParts.og" "skinCluster12.ip[0].ig";
 connectAttr "skinCluster12GroupId.id" "skinCluster12.ip[0].gi";
 connectAttr "Torso1.wm" "skinCluster12.ma[7]";
 connectAttr "Chest.wm" "skinCluster12.ma[8]";
-connectAttr "|Pelvis|Torso1|Chest|L_Shoulder.wm" "skinCluster12.ma[10]";
-connectAttr "|Pelvis|Torso1|Chest|L_Shoulder|L_Elbow.wm" "skinCluster12.ma[11]";
-connectAttr "|Pelvis|Torso1|Chest|L_Shoulder|L_Elbow|L_Wrist.wm" "skinCluster12.ma[12]"
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|L_Shoulder.wm" "skinCluster12.ma[10]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|L_Shoulder|L_Elbow.wm" "skinCluster12.ma[11]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|L_Shoulder|L_Elbow|L_Wrist.wm" "skinCluster12.ma[12]"
 		;
 connectAttr "Torso1.liw" "skinCluster12.lw[7]";
 connectAttr "Chest.liw" "skinCluster12.lw[8]";
-connectAttr "|Pelvis|Torso1|Chest|L_Shoulder.liw" "skinCluster12.lw[10]";
-connectAttr "|Pelvis|Torso1|Chest|L_Shoulder|L_Elbow.liw" "skinCluster12.lw[11]"
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|L_Shoulder.liw" "skinCluster12.lw[10]"
 		;
-connectAttr "|Pelvis|Torso1|Chest|L_Shoulder|L_Elbow|L_Wrist.liw" "skinCluster12.lw[12]"
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|L_Shoulder|L_Elbow.liw" "skinCluster12.lw[11]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|L_Shoulder|L_Elbow|L_Wrist.liw" "skinCluster12.lw[12]"
 		;
 connectAttr "Torso1.obcc" "skinCluster12.ifcl[7]";
 connectAttr "Chest.obcc" "skinCluster12.ifcl[8]";
-connectAttr "|Pelvis|Torso1|Chest|L_Shoulder.obcc" "skinCluster12.ifcl[10]";
-connectAttr "|Pelvis|Torso1|Chest|L_Shoulder|L_Elbow.obcc" "skinCluster12.ifcl[11]"
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|L_Shoulder.obcc" "skinCluster12.ifcl[10]"
 		;
-connectAttr "|Pelvis|Torso1|Chest|L_Shoulder|L_Elbow|L_Wrist.obcc" "skinCluster12.ifcl[12]"
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|L_Shoulder|L_Elbow.obcc" "skinCluster12.ifcl[11]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|L_Shoulder|L_Elbow|L_Wrist.obcc" "skinCluster12.ifcl[12]"
 		;
 connectAttr "bindPose1.msg" "skinCluster12.bp";
 connectAttr "geomBind1.scs" "skinCluster12.gb";
-connectAttr "|Pelvis|Torso1|Chest|L_Shoulder|L_Elbow.msg" "skinCluster12.ptt";
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|L_Shoulder|L_Elbow.msg" "skinCluster12.ptt"
+		;
 connectAttr "skinCluster12GroupId.msg" "skinCluster12Set.gn" -na;
 connectAttr "polySurfaceShape27.iog.og[4]" "skinCluster12Set.dsm" -na;
 connectAttr "skinCluster12.msg" "skinCluster12Set.ub[0]";
@@ -49789,27 +49924,32 @@ connectAttr "skinCluster13GroupParts.og" "skinCluster13.ip[0].ig";
 connectAttr "skinCluster13GroupId.id" "skinCluster13.ip[0].gi";
 connectAttr "Torso1.wm" "skinCluster13.ma[7]";
 connectAttr "Chest.wm" "skinCluster13.ma[8]";
-connectAttr "|Pelvis|Torso1|Chest|R_Shoulder.wm" "skinCluster13.ma[13]";
-connectAttr "|Pelvis|Torso1|Chest|R_Shoulder|R_Elbow.wm" "skinCluster13.ma[14]";
-connectAttr "|Pelvis|Torso1|Chest|R_Shoulder|R_Elbow|R_Wrist.wm" "skinCluster13.ma[15]"
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|R_Shoulder.wm" "skinCluster13.ma[13]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|R_Shoulder|R_Elbow.wm" "skinCluster13.ma[14]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|R_Shoulder|R_Elbow|R_Wrist.wm" "skinCluster13.ma[15]"
 		;
 connectAttr "Torso1.liw" "skinCluster13.lw[7]";
 connectAttr "Chest.liw" "skinCluster13.lw[8]";
-connectAttr "|Pelvis|Torso1|Chest|R_Shoulder.liw" "skinCluster13.lw[13]";
-connectAttr "|Pelvis|Torso1|Chest|R_Shoulder|R_Elbow.liw" "skinCluster13.lw[14]"
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|R_Shoulder.liw" "skinCluster13.lw[13]"
 		;
-connectAttr "|Pelvis|Torso1|Chest|R_Shoulder|R_Elbow|R_Wrist.liw" "skinCluster13.lw[15]"
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|R_Shoulder|R_Elbow.liw" "skinCluster13.lw[14]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|R_Shoulder|R_Elbow|R_Wrist.liw" "skinCluster13.lw[15]"
 		;
 connectAttr "Torso1.obcc" "skinCluster13.ifcl[7]";
 connectAttr "Chest.obcc" "skinCluster13.ifcl[8]";
-connectAttr "|Pelvis|Torso1|Chest|R_Shoulder.obcc" "skinCluster13.ifcl[13]";
-connectAttr "|Pelvis|Torso1|Chest|R_Shoulder|R_Elbow.obcc" "skinCluster13.ifcl[14]"
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|R_Shoulder.obcc" "skinCluster13.ifcl[13]"
 		;
-connectAttr "|Pelvis|Torso1|Chest|R_Shoulder|R_Elbow|R_Wrist.obcc" "skinCluster13.ifcl[15]"
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|R_Shoulder|R_Elbow.obcc" "skinCluster13.ifcl[14]"
+		;
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|R_Shoulder|R_Elbow|R_Wrist.obcc" "skinCluster13.ifcl[15]"
 		;
 connectAttr "bindPose1.msg" "skinCluster13.bp";
 connectAttr "geomBind1.scs" "skinCluster13.gb";
-connectAttr "|Pelvis|Torso1|Chest|R_Shoulder|R_Elbow.msg" "skinCluster13.ptt";
+connectAttr "|Pelvis1|Pelvis_ctl|transform11|Pelvis|Torso1|Chest|R_Shoulder|R_Elbow.msg" "skinCluster13.ptt"
+		;
 connectAttr "skinCluster13GroupId.msg" "skinCluster13Set.gn" -na;
 connectAttr "polySurfaceShape28.iog.og[4]" "skinCluster13Set.dsm" -na;
 connectAttr "skinCluster13.msg" "skinCluster13Set.ub[0]";
@@ -49849,4 +49989,4 @@ connectAttr "file2.msg" ":defaultTextureList1.tx" -na;
 connectAttr "file3.msg" ":defaultTextureList1.tx" -na;
 connectAttr "file4.msg" ":defaultTextureList1.tx" -na;
 connectAttr "ikRPsolver.msg" ":ikSystem.sol" -na;
-// End of Manniquin20.ma
+// End of Manniquin21.ma
