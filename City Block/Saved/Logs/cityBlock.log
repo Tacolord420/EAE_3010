@@ -1007,3 +1007,4 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2019.06.16-20.29.29:030][356]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/WhiteBoxICA1_BuiltData" FILE="../../../../../../Github/EAE_3010/City Block/Content/WhiteBoxICA1_BuiltData.uasset" SILENT=true
 [2019.06.16-20.29.29:088][356]LogSavePackage: Moving '../../../../../../Github/EAE_3010/City Block/Saved/WhiteBoxICA1_BuiltData9F2E299E4F55D3F2BC6EA1A3A8F30A2C.tmp' to '../../../../../../Github/EAE_3010/City Block/Content/WhiteBoxICA1_BuiltData.uasset'
 [2019.06.16-20.29.44:484][997]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (CraneOBJ)
+[2019.06.16-20.33.29:895][ 85]LogSlate: FSceneViewport::OnFocusLost() reason 0
