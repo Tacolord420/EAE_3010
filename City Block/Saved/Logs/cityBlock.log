@@ -1008,3 +1008,612 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2019.06.16-20.29.29:088][356]LogSavePackage: Moving '../../../../../../Github/EAE_3010/City Block/Saved/WhiteBoxICA1_BuiltData9F2E299E4F55D3F2BC6EA1A3A8F30A2C.tmp' to '../../../../../../Github/EAE_3010/City Block/Content/WhiteBoxICA1_BuiltData.uasset'
 [2019.06.16-20.29.44:484][997]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (CraneOBJ)
 [2019.06.16-20.33.29:895][ 85]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.06.16-20.34.42:078][179]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.06.16-20.37.51:717][411]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.06.16-20.38.14:164][836]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.06.16-20.38.46:250][338]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.06.16-20.39.05:386][984]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2019.06.16-20.39.12:394][543]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2019.06.16-20.39.14:321][666]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2019.06.16-20.39.19:922][ 61]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2019.06.16-20.39.22:805][258]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2019.06.16-20.39.49:412][543]LogUObjectHash: Compacting FUObjectHashTables data took   2.33ms
+[2019.06.16-20.39.49:413][543]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/WhiteBoxICA1" FILE="../../../../../../Github/EAE_3010/City Block/Saved/Autosaves/Game/WhiteBoxICA1_Auto2.umap" SILENT=true AUTOSAVING=true KEEPDIRTY=false
+[2019.06.16-20.39.50:294][543]LogSavePackage: Moving '../../../../../../Github/EAE_3010/City Block/Saved/WhiteBoxICA1_Auto275C3B2C94502809F41C53B9C4D68A316.tmp' to '../../../../../../Github/EAE_3010/City Block/Saved/Autosaves/Game/WhiteBoxICA1_Auto2.umap'
+[2019.06.16-20.39.50:298][543]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/WhiteBoxICA1' took 0.927
+[2019.06.16-20.39.50:298][543]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.927
+[2019.06.16-20.40.12:525][787]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.06.16-20.40.33:429][967]LogMaterial: Display: Missing cached shader map for material E_Mat, compiling. 
+[2019.06.16-20.40.33:459][967]LogMaterial: Display: Missing cached shader map for material lord_zuckerberg_Mat, compiling. 
+[2019.06.16-20.40.33:488][967]LogMaterial: Display: Missing cached shader map for material wood00_Mat, compiling. 
+[2019.06.16-20.40.33:558][967]LogMaterial: Display: Missing cached shader map for material woodColor_Mat, compiling. 
+[2019.06.16-20.40.34:819][967]LogMetaData: Removing '/Game/Mats/Import/bezeledBlock.bezeledBlock' ref from Metadata '/Game/WoodBlockMatts/Import/bezeledBlock.PackageMetaData'
+[2019.06.16-20.40.34:846][967]LogMetaData: Removing '/Game/Mats/Import/eCandle.eCandle' ref from Metadata '/Game/WoodBlockMatts/Import/eCandle.PackageMetaData'
+[2019.06.16-20.40.35:007][967]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Mats/woodNormal" FILE="../../../../../../Github/EAE_3010/City Block/Content/Mats/woodNormal.uasset" SILENT=true
+[2019.06.16-20.40.35:083][967]LogSavePackage: Moving '../../../../../../Github/EAE_3010/City Block/Saved/woodNormal3B13175D44207DABBF39518B53D76CE5.tmp' to '../../../../../../Github/EAE_3010/City Block/Content/Mats/woodNormal.uasset'
+[2019.06.16-20.40.35:105][967]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Mats/wood00" FILE="../../../../../../Github/EAE_3010/City Block/Content/Mats/wood00.uasset" SILENT=true
+[2019.06.16-20.40.35:164][967]LogSavePackage: Moving '../../../../../../Github/EAE_3010/City Block/Saved/wood0094F74A58441FE055980AC7BB5E55E64F.tmp' to '../../../../../../Github/EAE_3010/City Block/Content/Mats/wood00.uasset'
+[2019.06.16-20.40.35:196][967]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Mats/phong1SG" FILE="../../../../../../Github/EAE_3010/City Block/Content/Mats/phong1SG.uasset" SILENT=true
+[2019.06.16-20.40.35:213][967]LogSavePackage: Moving '../../../../../../Github/EAE_3010/City Block/Saved/phong1SG13DA6A3D469851EDF549EDA155FE3ED7.tmp' to '../../../../../../Github/EAE_3010/City Block/Content/Mats/phong1SG.uasset'
+[2019.06.16-20.40.35:266][967]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Mats/phong2SG" FILE="../../../../../../Github/EAE_3010/City Block/Content/Mats/phong2SG.uasset" SILENT=true
+[2019.06.16-20.40.35:282][967]LogSavePackage: Moving '../../../../../../Github/EAE_3010/City Block/Saved/phong2SGEFACA3FE4F4F1FC92A062E8EEBF415B0.tmp' to '../../../../../../Github/EAE_3010/City Block/Content/Mats/phong2SG.uasset'
+[2019.06.16-20.40.35:323][967]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Mats/Crane/lambert8SG" FILE="../../../../../../Github/EAE_3010/City Block/Content/Mats/Crane/lambert8SG.uasset" SILENT=true
+[2019.06.16-20.40.35:343][967]LogSavePackage: Moving '../../../../../../Github/EAE_3010/City Block/Saved/lambert8SG1341094745129FD04E1BDBB58FE68680.tmp' to '../../../../../../Github/EAE_3010/City Block/Content/Mats/Crane/lambert8SG.uasset'
+[2019.06.16-20.40.35:388][967]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Mats/darkWood01_Mat" FILE="../../../../../../Github/EAE_3010/City Block/Content/Mats/darkWood01_Mat.uasset" SILENT=true
+[2019.06.16-20.40.35:424][967]LogSavePackage: Moving '../../../../../../Github/EAE_3010/City Block/Saved/darkWood01_Mat60B3A1094B07ADA6FB832BBEC23F72B9.tmp' to '../../../../../../Github/EAE_3010/City Block/Content/Mats/darkWood01_Mat.uasset'
+[2019.06.16-20.40.35:466][967]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Mats/Crane/blinn1SG" FILE="../../../../../../Github/EAE_3010/City Block/Content/Mats/Crane/blinn1SG.uasset" SILENT=true
+[2019.06.16-20.40.35:482][967]LogSavePackage: Moving '../../../../../../Github/EAE_3010/City Block/Saved/blinn1SGF3E796B041DFDF0CFE0BC48F2068EFCF.tmp' to '../../../../../../Github/EAE_3010/City Block/Content/Mats/Crane/blinn1SG.uasset'
+[2019.06.16-20.40.35:523][967]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Mats/Crane/CraneOBJ" FILE="../../../../../../Github/EAE_3010/City Block/Content/Mats/Crane/CraneOBJ.uasset" SILENT=true
+[2019.06.16-20.40.35:666][967]LogSavePackage: Moving '../../../../../../Github/EAE_3010/City Block/Saved/CraneOBJEE0EC1BD481DA721A061539756C8C6C4.tmp' to '../../../../../../Github/EAE_3010/City Block/Content/Mats/Crane/CraneOBJ.uasset'
+[2019.06.16-20.40.35:674][967]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/WoodBlockMatts/Crane/CraneOBJ" FILE="../../../../../../Github/EAE_3010/City Block/Content/WoodBlockMatts/Crane/CraneOBJ.uasset" SILENT=true
+[2019.06.16-20.40.35:676][967]LogSavePackage: Moving '../../../../../../Github/EAE_3010/City Block/Saved/CraneOBJ5F20E354456D20CF9B2BB8A2ADE63565.tmp' to '../../../../../../Github/EAE_3010/City Block/Content/WoodBlockMatts/Crane/CraneOBJ.uasset'
+[2019.06.16-20.40.35:698][967]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Mats/darkWood02" FILE="../../../../../../Github/EAE_3010/City Block/Content/Mats/darkWood02.uasset" SILENT=true
+[2019.06.16-20.40.35:715][967]LogSavePackage: Moving '../../../../../../Github/EAE_3010/City Block/Saved/darkWood02D9D7CC644E284FBA398028AD6B23E2B7.tmp' to '../../../../../../Github/EAE_3010/City Block/Content/Mats/darkWood02.uasset'
+[2019.06.16-20.40.35:751][967]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Mats/darkWood02_Mat" FILE="../../../../../../Github/EAE_3010/City Block/Content/Mats/darkWood02_Mat.uasset" SILENT=true
+[2019.06.16-20.40.35:775][967]LogSavePackage: Moving '../../../../../../Github/EAE_3010/City Block/Saved/darkWood02_Mat2F1D66764D85E3D70413ABBD6EB7988A.tmp' to '../../../../../../Github/EAE_3010/City Block/Content/Mats/darkWood02_Mat.uasset'
+[2019.06.16-20.40.35:782][967]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/WoodBlockMatts/darkWood02_Mat" FILE="../../../../../../Github/EAE_3010/City Block/Content/WoodBlockMatts/darkWood02_Mat.uasset" SILENT=true
+[2019.06.16-20.40.35:787][967]LogSavePackage: Moving '../../../../../../Github/EAE_3010/City Block/Saved/darkWood02_Mat0783FE554E6A2B243FC2E8AF871EB5C3.tmp' to '../../../../../../Github/EAE_3010/City Block/Content/WoodBlockMatts/darkWood02_Mat.uasset'
+[2019.06.16-20.40.35:809][967]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Mats/greenWood" FILE="../../../../../../Github/EAE_3010/City Block/Content/Mats/greenWood.uasset" SILENT=true
+[2019.06.16-20.40.35:831][967]LogSavePackage: Moving '../../../../../../Github/EAE_3010/City Block/Saved/greenWoodCB48E42F4280D2F0A64BE1A38C93E88D.tmp' to '../../../../../../Github/EAE_3010/City Block/Content/Mats/greenWood.uasset'
+[2019.06.16-20.40.35:869][967]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Mats/greenWood_Mat" FILE="../../../../../../Github/EAE_3010/City Block/Content/Mats/greenWood_Mat.uasset" SILENT=true
+[2019.06.16-20.40.35:889][967]LogSavePackage: Moving '../../../../../../Github/EAE_3010/City Block/Saved/greenWood_Mat834A1583464F09C188859B9E7B38E477.tmp' to '../../../../../../Github/EAE_3010/City Block/Content/Mats/greenWood_Mat.uasset'
+[2019.06.16-20.40.35:898][967]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/WoodBlockMatts/greenWood_Mat" FILE="../../../../../../Github/EAE_3010/City Block/Content/WoodBlockMatts/greenWood_Mat.uasset" SILENT=true
+[2019.06.16-20.40.35:903][967]LogSavePackage: Moving '../../../../../../Github/EAE_3010/City Block/Saved/greenWood_MatA05998E6421BDD2B92AE8F9E1C281BC2.tmp' to '../../../../../../Github/EAE_3010/City Block/Content/WoodBlockMatts/greenWood_Mat.uasset'
+[2019.06.16-20.40.35:919][967]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Mats/lightWood" FILE="../../../../../../Github/EAE_3010/City Block/Content/Mats/lightWood.uasset" SILENT=true
+[2019.06.16-20.40.35:937][967]LogSavePackage: Moving '../../../../../../Github/EAE_3010/City Block/Saved/lightWood873F7946428B3FE5FAF9D1B5E8DC5DEA.tmp' to '../../../../../../Github/EAE_3010/City Block/Content/Mats/lightWood.uasset'
+[2019.06.16-20.40.35:970][967]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Mats/lightWood_Mat" FILE="../../../../../../Github/EAE_3010/City Block/Content/Mats/lightWood_Mat.uasset" SILENT=true
+[2019.06.16-20.40.35:995][967]LogSavePackage: Moving '../../../../../../Github/EAE_3010/City Block/Saved/lightWood_Mat5A74A95944589754784F0386A2E07753.tmp' to '../../../../../../Github/EAE_3010/City Block/Content/Mats/lightWood_Mat.uasset'
+[2019.06.16-20.40.36:006][967]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/WoodBlockMatts/lightWood_Mat" FILE="../../../../../../Github/EAE_3010/City Block/Content/WoodBlockMatts/lightWood_Mat.uasset" SILENT=true
+[2019.06.16-20.40.36:016][967]LogSavePackage: Moving '../../../../../../Github/EAE_3010/City Block/Saved/lightWood_Mat2F5D2D564C5F200E605FB393DFD527C1.tmp' to '../../../../../../Github/EAE_3010/City Block/Content/WoodBlockMatts/lightWood_Mat.uasset'
+[2019.06.16-20.40.36:043][967]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Mats/darkWood01" FILE="../../../../../../Github/EAE_3010/City Block/Content/Mats/darkWood01.uasset" SILENT=true
+[2019.06.16-20.40.36:073][967]LogSavePackage: Moving '../../../../../../Github/EAE_3010/City Block/Saved/darkWood01E2F96BDA47B1E8E334DE52BF644582F2.tmp' to '../../../../../../Github/EAE_3010/City Block/Content/Mats/darkWood01.uasset'
+[2019.06.16-20.40.36:108][967]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Mats/mediumWood_Mat" FILE="../../../../../../Github/EAE_3010/City Block/Content/Mats/mediumWood_Mat.uasset" SILENT=true
+[2019.06.16-20.40.36:136][967]LogSavePackage: Moving '../../../../../../Github/EAE_3010/City Block/Saved/mediumWood_MatD73285F84F8EC549888F65907C9D7F99.tmp' to '../../../../../../Github/EAE_3010/City Block/Content/Mats/mediumWood_Mat.uasset'
+[2019.06.16-20.40.36:155][967]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Mats/mediumWood" FILE="../../../../../../Github/EAE_3010/City Block/Content/Mats/mediumWood.uasset" SILENT=true
+[2019.06.16-20.40.36:180][967]LogSavePackage: Moving '../../../../../../Github/EAE_3010/City Block/Saved/mediumWoodF26C233E485C67D61D7A2D80B1D2F6C9.tmp' to '../../../../../../Github/EAE_3010/City Block/Content/Mats/mediumWood.uasset'
+[2019.06.16-20.40.36:214][967]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Mats/Crane/blinn3SG" FILE="../../../../../../Github/EAE_3010/City Block/Content/Mats/Crane/blinn3SG.uasset" SILENT=true
+[2019.06.16-20.40.36:234][967]LogSavePackage: Moving '../../../../../../Github/EAE_3010/City Block/Saved/blinn3SG3F349D9A4945FD6229DFC991559466B9.tmp' to '../../../../../../Github/EAE_3010/City Block/Content/Mats/Crane/blinn3SG.uasset'
+[2019.06.16-20.40.36:270][967]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Mats/Crane/phong2SG" FILE="../../../../../../Github/EAE_3010/City Block/Content/Mats/Crane/phong2SG.uasset" SILENT=true
+[2019.06.16-20.40.36:288][967]LogSavePackage: Moving '../../../../../../Github/EAE_3010/City Block/Saved/phong2SG829364A74C8F95398E76ED8E98725805.tmp' to '../../../../../../Github/EAE_3010/City Block/Content/Mats/Crane/phong2SG.uasset'
+[2019.06.16-20.40.36:321][967]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Mats/Crane/blinn10SG" FILE="../../../../../../Github/EAE_3010/City Block/Content/Mats/Crane/blinn10SG.uasset" SILENT=true
+[2019.06.16-20.40.36:344][967]LogSavePackage: Moving '../../../../../../Github/EAE_3010/City Block/Saved/blinn10SG14F2449742300745167B1AA9923C6422.tmp' to '../../../../../../Github/EAE_3010/City Block/Content/Mats/Crane/blinn10SG.uasset'
+[2019.06.16-20.40.36:374][967]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Mats/Crane/blinn8SG" FILE="../../../../../../Github/EAE_3010/City Block/Content/Mats/Crane/blinn8SG.uasset" SILENT=true
+[2019.06.16-20.40.36:395][967]LogSavePackage: Moving '../../../../../../Github/EAE_3010/City Block/Saved/blinn8SGB1CEF42644921C247600E5B52BFC2880.tmp' to '../../../../../../Github/EAE_3010/City Block/Content/Mats/Crane/blinn8SG.uasset'
+[2019.06.16-20.40.36:431][967]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Mats/Crane/phong1SG" FILE="../../../../../../Github/EAE_3010/City Block/Content/Mats/Crane/phong1SG.uasset" SILENT=true
+[2019.06.16-20.40.36:447][967]LogSavePackage: Moving '../../../../../../Github/EAE_3010/City Block/Saved/phong1SGD1B6901640C3B609609445A9697D46B7.tmp' to '../../../../../../Github/EAE_3010/City Block/Content/Mats/Crane/phong1SG.uasset'
+[2019.06.16-20.40.36:481][967]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Mats/Crane/lambert9SG" FILE="../../../../../../Github/EAE_3010/City Block/Content/Mats/Crane/lambert9SG.uasset" SILENT=true
+[2019.06.16-20.40.36:497][967]LogSavePackage: Moving '../../../../../../Github/EAE_3010/City Block/Saved/lambert9SG4C75FAAC41F18C4B9BEF9EA7EA6135AF.tmp' to '../../../../../../Github/EAE_3010/City Block/Content/Mats/Crane/lambert9SG.uasset'
+[2019.06.16-20.40.36:533][967]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Mats/Crane/initialShadingGroup" FILE="../../../../../../Github/EAE_3010/City Block/Content/Mats/Crane/initialShadingGroup.uasset" SILENT=true
+[2019.06.16-20.40.36:550][967]LogSavePackage: Moving '../../../../../../Github/EAE_3010/City Block/Saved/initialShadingGroup6E3163A645E47900A6F7EC9A68557E23.tmp' to '../../../../../../Github/EAE_3010/City Block/Content/Mats/Crane/initialShadingGroup.uasset'
+[2019.06.16-20.40.36:591][967]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Mats/Crane/blinn13SG" FILE="../../../../../../Github/EAE_3010/City Block/Content/Mats/Crane/blinn13SG.uasset" SILENT=true
+[2019.06.16-20.40.36:607][967]LogSavePackage: Moving '../../../../../../Github/EAE_3010/City Block/Saved/blinn13SG66FC2CEF441B67B68BA64792F3CD6687.tmp' to '../../../../../../Github/EAE_3010/City Block/Content/Mats/Crane/blinn13SG.uasset'
+[2019.06.16-20.40.36:641][967]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Mats/Crane/blinn9SG" FILE="../../../../../../Github/EAE_3010/City Block/Content/Mats/Crane/blinn9SG.uasset" SILENT=true
+[2019.06.16-20.40.36:662][967]LogSavePackage: Moving '../../../../../../Github/EAE_3010/City Block/Saved/blinn9SGC5D0F439420D3FCD27D7D9AC84AD9577.tmp' to '../../../../../../Github/EAE_3010/City Block/Content/Mats/Crane/blinn9SG.uasset'
+[2019.06.16-20.40.36:699][967]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Mats/Crane/blinn4SG" FILE="../../../../../../Github/EAE_3010/City Block/Content/Mats/Crane/blinn4SG.uasset" SILENT=true
+[2019.06.16-20.40.36:716][967]LogSavePackage: Moving '../../../../../../Github/EAE_3010/City Block/Saved/blinn4SGC363C2D7424B2896232D6F8880BC9CFD.tmp' to '../../../../../../Github/EAE_3010/City Block/Content/Mats/Crane/blinn4SG.uasset'
+[2019.06.16-20.40.36:748][967]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Mats/Crane/blinn2SG" FILE="../../../../../../Github/EAE_3010/City Block/Content/Mats/Crane/blinn2SG.uasset" SILENT=true
+[2019.06.16-20.40.36:765][967]LogSavePackage: Moving '../../../../../../Github/EAE_3010/City Block/Saved/blinn2SG88B94E35401E09B78C7526A847348843.tmp' to '../../../../../../Github/EAE_3010/City Block/Content/Mats/Crane/blinn2SG.uasset'
+[2019.06.16-20.40.36:799][967]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Mats/Crane/lambert6SG" FILE="../../../../../../Github/EAE_3010/City Block/Content/Mats/Crane/lambert6SG.uasset" SILENT=true
+[2019.06.16-20.40.36:815][967]LogSavePackage: Moving '../../../../../../Github/EAE_3010/City Block/Saved/lambert6SGB8B0E4234ECDC2194EB914A0CF2C3FE1.tmp' to '../../../../../../Github/EAE_3010/City Block/Content/Mats/Crane/lambert6SG.uasset'
+[2019.06.16-20.40.36:846][967]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Mats/Crane/lambert7SG" FILE="../../../../../../Github/EAE_3010/City Block/Content/Mats/Crane/lambert7SG.uasset" SILENT=true
+[2019.06.16-20.40.36:866][967]LogSavePackage: Moving '../../../../../../Github/EAE_3010/City Block/Saved/lambert7SG7468E32E43960DF39DA466B8139FC324.tmp' to '../../../../../../Github/EAE_3010/City Block/Content/Mats/Crane/lambert7SG.uasset'
+[2019.06.16-20.40.36:902][967]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Mats/Crane/blinn7SG" FILE="../../../../../../Github/EAE_3010/City Block/Content/Mats/Crane/blinn7SG.uasset" SILENT=true
+[2019.06.16-20.40.36:920][967]LogSavePackage: Moving '../../../../../../Github/EAE_3010/City Block/Saved/blinn7SGDA6D353044CEED3D874FE68E651CE219.tmp' to '../../../../../../Github/EAE_3010/City Block/Content/Mats/Crane/blinn7SG.uasset'
+[2019.06.16-20.40.36:956][967]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Mats/Crane/blinn5SG" FILE="../../../../../../Github/EAE_3010/City Block/Content/Mats/Crane/blinn5SG.uasset" SILENT=true
+[2019.06.16-20.40.36:973][967]LogSavePackage: Moving '../../../../../../Github/EAE_3010/City Block/Saved/blinn5SG77BCB79848AD571AD714CAA2188FC53F.tmp' to '../../../../../../Github/EAE_3010/City Block/Content/Mats/Crane/blinn5SG.uasset'
+[2019.06.16-20.40.37:011][967]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Mats/Crane/lambert3SG" FILE="../../../../../../Github/EAE_3010/City Block/Content/Mats/Crane/lambert3SG.uasset" SILENT=true
+[2019.06.16-20.40.37:033][967]LogSavePackage: Moving '../../../../../../Github/EAE_3010/City Block/Saved/lambert3SG953130E442313A090B265C86E8A36D44.tmp' to '../../../../../../Github/EAE_3010/City Block/Content/Mats/Crane/lambert3SG.uasset'
+[2019.06.16-20.40.37:052][967]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Mats/E" FILE="../../../../../../Github/EAE_3010/City Block/Content/Mats/E.uasset" SILENT=true
+[2019.06.16-20.40.37:095][967]LogSavePackage: Moving '../../../../../../Github/EAE_3010/City Block/Saved/E9354CB68490F627C4ED46B8DC6517651.tmp' to '../../../../../../Github/EAE_3010/City Block/Content/Mats/E.uasset'
+[2019.06.16-20.40.39:002][967]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Mats/E_Mat" FILE="../../../../../../Github/EAE_3010/City Block/Content/Mats/E_Mat.uasset" SILENT=true
+[2019.06.16-20.40.39:022][967]LogSavePackage: Moving '../../../../../../Github/EAE_3010/City Block/Saved/E_Mat73430DFE4A259DD3DDF0119029FCAA1F.tmp' to '../../../../../../Github/EAE_3010/City Block/Content/Mats/E_Mat.uasset'
+[2019.06.16-20.40.39:042][967]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Mats/Graphics001" FILE="../../../../../../Github/EAE_3010/City Block/Content/Mats/Graphics001.uasset" SILENT=true
+[2019.06.16-20.40.39:055][967]LogSavePackage: Moving '../../../../../../Github/EAE_3010/City Block/Saved/Graphics001887333E44B9EF9BF571B2D809E74E73B.tmp' to '../../../../../../Github/EAE_3010/City Block/Content/Mats/Graphics001.uasset'
+[2019.06.16-20.40.39:071][967]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Mats/lord_zuckerberg" FILE="../../../../../../Github/EAE_3010/City Block/Content/Mats/lord_zuckerberg.uasset" SILENT=true
+[2019.06.16-20.40.39:087][967]LogSavePackage: Moving '../../../../../../Github/EAE_3010/City Block/Saved/lord_zuckerberg9B955BFD424727EA6DD6CFB57D8F3223.tmp' to '../../../../../../Github/EAE_3010/City Block/Content/Mats/lord_zuckerberg.uasset'
+[2019.06.16-20.40.39:112][967]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Mats/lord_zuckerberg_Mat" FILE="../../../../../../Github/EAE_3010/City Block/Content/Mats/lord_zuckerberg_Mat.uasset" SILENT=true
+[2019.06.16-20.40.39:128][967]LogSavePackage: Moving '../../../../../../Github/EAE_3010/City Block/Saved/lord_zuckerberg_MatB4D508704E03D8C9940C69A53D38ADDA.tmp' to '../../../../../../Github/EAE_3010/City Block/Content/Mats/lord_zuckerberg_Mat.uasset'
+[2019.06.16-20.40.39:149][967]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Mats/wood00_Mat" FILE="../../../../../../Github/EAE_3010/City Block/Content/Mats/wood00_Mat.uasset" SILENT=true
+[2019.06.16-20.40.39:162][967]LogSavePackage: Moving '../../../../../../Github/EAE_3010/City Block/Saved/wood00_MatCE4A3934412FF82EBFDB5A94D5656B0F.tmp' to '../../../../../../Github/EAE_3010/City Block/Content/Mats/wood00_Mat.uasset'
+[2019.06.16-20.40.39:172][967]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Mats/woodColor" FILE="../../../../../../Github/EAE_3010/City Block/Content/Mats/woodColor.uasset" SILENT=true
+[2019.06.16-20.40.39:202][967]LogSavePackage: Moving '../../../../../../Github/EAE_3010/City Block/Saved/woodColorE0B3097744C9508EBB7DFBB0B12509D1.tmp' to '../../../../../../Github/EAE_3010/City Block/Content/Mats/woodColor.uasset'
+[2019.06.16-20.40.39:224][967]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Mats/woodTexture" FILE="../../../../../../Github/EAE_3010/City Block/Content/Mats/woodTexture.uasset" SILENT=true
+[2019.06.16-20.40.39:242][967]LogSavePackage: Moving '../../../../../../Github/EAE_3010/City Block/Saved/woodTextureEE6FA31549285E0A3E98DDA5D62F7FD3.tmp' to '../../../../../../Github/EAE_3010/City Block/Content/Mats/woodTexture.uasset'
+[2019.06.16-20.40.39:263][967]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Mats/Import/bezeledBlock" FILE="../../../../../../Github/EAE_3010/City Block/Content/Mats/Import/bezeledBlock.uasset" SILENT=true
+[2019.06.16-20.40.39:276][967]LogSavePackage: Moving '../../../../../../Github/EAE_3010/City Block/Saved/bezeledBlockE6AF1F524009780DA7F1CDA7562B57F6.tmp' to '../../../../../../Github/EAE_3010/City Block/Content/Mats/Import/bezeledBlock.uasset'
+[2019.06.16-20.40.39:296][967]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Mats/Import/eCandle" FILE="../../../../../../Github/EAE_3010/City Block/Content/Mats/Import/eCandle.uasset" SILENT=true
+[2019.06.16-20.40.39:308][967]LogSavePackage: Moving '../../../../../../Github/EAE_3010/City Block/Saved/eCandle200CAF2741AC94B85CEDE385B93658F3.tmp' to '../../../../../../Github/EAE_3010/City Block/Content/Mats/Import/eCandle.uasset'
+[2019.06.16-20.40.39:330][967]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Mats/Import/lambert2" FILE="../../../../../../Github/EAE_3010/City Block/Content/Mats/Import/lambert2.uasset" SILENT=true
+[2019.06.16-20.40.39:343][967]LogSavePackage: Moving '../../../../../../Github/EAE_3010/City Block/Saved/lambert2E6CB49CE4649332BA22A3E98D6F1B237.tmp' to '../../../../../../Github/EAE_3010/City Block/Content/Mats/Import/lambert2.uasset'
+[2019.06.16-20.40.39:356][967]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Mats/Import/woodColor" FILE="../../../../../../Github/EAE_3010/City Block/Content/Mats/Import/woodColor.uasset" SILENT=true
+[2019.06.16-20.40.39:386][967]LogSavePackage: Moving '../../../../../../Github/EAE_3010/City Block/Saved/woodColor49CE64FF469FB57981F3349E961DB308.tmp' to '../../../../../../Github/EAE_3010/City Block/Content/Mats/Import/woodColor.uasset'
+[2019.06.16-20.40.39:405][967]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Mats/Import/woodColor_Mat" FILE="../../../../../../Github/EAE_3010/City Block/Content/Mats/Import/woodColor_Mat.uasset" SILENT=true
+[2019.06.16-20.40.39:418][967]LogSavePackage: Moving '../../../../../../Github/EAE_3010/City Block/Saved/woodColor_Mat4FE545D743A04BEB5B7C0FB3B54D7324.tmp' to '../../../../../../Github/EAE_3010/City Block/Content/Mats/Import/woodColor_Mat.uasset'
+[2019.06.16-20.40.42:592][967]LogUObjectHash: Compacting FUObjectHashTables data took   2.45ms
+[2019.06.16-20.40.42:632][967]LogUObjectHash: Compacting FUObjectHashTables data took   0.88ms
+[2019.06.16-20.40.42:671][967]LogUObjectHash: Compacting FUObjectHashTables data took   0.93ms
+[2019.06.16-20.40.42:712][967]LogUObjectHash: Compacting FUObjectHashTables data took   1.10ms
+[2019.06.16-20.40.42:752][967]LogUObjectHash: Compacting FUObjectHashTables data took   0.84ms
+[2019.06.16-20.40.42:793][967]LogUObjectHash: Compacting FUObjectHashTables data took   0.83ms
+[2019.06.16-20.40.42:832][967]LogUObjectHash: Compacting FUObjectHashTables data took   0.87ms
+[2019.06.16-20.40.42:871][967]LogUObjectHash: Compacting FUObjectHashTables data took   1.24ms
+[2019.06.16-20.40.42:911][967]LogUObjectHash: Compacting FUObjectHashTables data took   0.86ms
+[2019.06.16-20.40.42:952][967]LogUObjectHash: Compacting FUObjectHashTables data took   0.84ms
+[2019.06.16-20.40.42:990][967]LogUObjectHash: Compacting FUObjectHashTables data took   0.83ms
+[2019.06.16-20.40.43:031][967]LogUObjectHash: Compacting FUObjectHashTables data took   0.85ms
+[2019.06.16-20.40.43:072][967]LogUObjectHash: Compacting FUObjectHashTables data took   1.28ms
+[2019.06.16-20.40.43:113][967]LogUObjectHash: Compacting FUObjectHashTables data took   1.03ms
+[2019.06.16-20.40.43:150][967]LogUObjectHash: Compacting FUObjectHashTables data took   0.86ms
+[2019.06.16-20.40.43:189][967]LogUObjectHash: Compacting FUObjectHashTables data took   0.84ms
+[2019.06.16-20.40.43:227][967]LogUObjectHash: Compacting FUObjectHashTables data took   0.94ms
+[2019.06.16-20.40.43:269][967]LogUObjectHash: Compacting FUObjectHashTables data took   0.84ms
+[2019.06.16-20.40.43:307][967]LogUObjectHash: Compacting FUObjectHashTables data took   0.82ms
+[2019.06.16-20.40.43:348][967]LogUObjectHash: Compacting FUObjectHashTables data took   0.99ms
+[2019.06.16-20.40.43:387][967]LogUObjectHash: Compacting FUObjectHashTables data took   0.90ms
+[2019.06.16-20.40.43:428][967]LogUObjectHash: Compacting FUObjectHashTables data took   0.89ms
+[2019.06.16-20.40.43:469][967]LogUObjectHash: Compacting FUObjectHashTables data took   0.84ms
+[2019.06.16-20.40.43:510][967]LogUObjectHash: Compacting FUObjectHashTables data took   0.90ms
+[2019.06.16-20.40.43:549][967]LogUObjectHash: Compacting FUObjectHashTables data took   0.83ms
+[2019.06.16-20.40.43:588][967]LogUObjectHash: Compacting FUObjectHashTables data took   0.83ms
+[2019.06.16-20.40.43:628][967]LogUObjectHash: Compacting FUObjectHashTables data took   0.92ms
+[2019.06.16-20.40.43:669][967]LogUObjectHash: Compacting FUObjectHashTables data took   0.94ms
+[2019.06.16-20.40.43:712][967]LogUObjectHash: Compacting FUObjectHashTables data took   1.06ms
+[2019.06.16-20.40.43:752][967]LogUObjectHash: Compacting FUObjectHashTables data took   0.85ms
+[2019.06.16-20.40.43:792][967]LogUObjectHash: Compacting FUObjectHashTables data took   1.04ms
+[2019.06.16-20.40.43:832][967]LogUObjectHash: Compacting FUObjectHashTables data took   1.12ms
+[2019.06.16-20.40.43:871][967]LogUObjectHash: Compacting FUObjectHashTables data took   0.98ms
+[2019.06.16-20.40.43:915][967]LogUObjectHash: Compacting FUObjectHashTables data took   0.86ms
+[2019.06.16-20.40.43:952][967]LogUObjectHash: Compacting FUObjectHashTables data took   0.82ms
+[2019.06.16-20.40.43:992][967]LogUObjectHash: Compacting FUObjectHashTables data took   0.83ms
+[2019.06.16-20.40.44:031][967]LogUObjectHash: Compacting FUObjectHashTables data took   0.98ms
+[2019.06.16-20.40.44:070][967]LogUObjectHash: Compacting FUObjectHashTables data took   0.90ms
+[2019.06.16-20.40.44:112][967]LogUObjectHash: Compacting FUObjectHashTables data took   0.96ms
+[2019.06.16-20.40.44:155][967]LogUObjectHash: Compacting FUObjectHashTables data took   0.84ms
+[2019.06.16-20.40.44:193][967]LogUObjectHash: Compacting FUObjectHashTables data took   0.83ms
+[2019.06.16-20.40.44:233][967]LogUObjectHash: Compacting FUObjectHashTables data took   0.87ms
+[2019.06.16-20.40.44:278][967]LogUObjectHash: Compacting FUObjectHashTables data took   2.47ms
+[2019.06.16-20.40.44:317][967]LogUObjectHash: Compacting FUObjectHashTables data took   0.96ms
+[2019.06.16-20.40.44:358][967]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Manniquin/Pirate_Texture_edit_Mat" FILE="../../../../../../Github/EAE_3010/City Block/Content/Manniquin/Pirate_Texture_edit_Mat.uasset" SILENT=true
+[2019.06.16-20.40.44:382][967]LogSavePackage: Moving '../../../../../../Github/EAE_3010/City Block/Saved/Pirate_Texture_edit_Mat353245474089BDFDF550399E2F6A8D1F.tmp' to '../../../../../../Github/EAE_3010/City Block/Content/Manniquin/Pirate_Texture_edit_Mat.uasset'
+[2019.06.16-20.40.47:115][197]Cmd: TRANSACTION UNDO
+[2019.06.16-20.40.47:115][197]LogEditorTransaction: Undo Apply Material to Surface
+[2019.06.16-20.40.56:922][223]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.06.16-20.44.48:478][818]AssetReimport: New page: Outstanding source content changes 8:44:48 AM
+[2019.06.16-20.44.48:480][818]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 D:/Github/EAE_3010/City Block/Content/Blocks/darkWood02.jpg)
+[2019.06.16-20.44.48:613][818]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 D:/Github/EAE_3010/City Block/Content/Blocks/arch.obj)
+[2019.06.16-20.44.48:620][818]LogFbx: Loading FBX Scene from D:/Github/EAE_3010/City Block/Content/Blocks/arch.obj
+[2019.06.16-20.44.48:629][818]LogFbx: FBX Scene Loaded Succesfully
+[2019.06.16-20.48.19:814][818]LogSlate: Window 'FBX Import Options' being destroyed
+[2019.06.16-20.48.20:007][818]LogStaticMesh: Building static mesh arch...
+[2019.06.16-20.48.20:014][818]LogStaticMesh: Built static mesh [0.01s] /Game/Blocks/arch.arch
+[2019.06.16-20.48.20:042][819]LogUnrealEdMisc: Warning: Heartbeat event firing too frequently (0.000 sec). This should never happen. Something is wrong with the timer delegate!
+[2019.06.16-20.48.20:042][819]LogUnrealEdMisc: Warning: Heartbeat event firing too frequently (0.000 sec). This should never happen. Something is wrong with the timer delegate!
+[2019.06.16-20.48.20:042][819]LogUnrealEdMisc: Warning: Heartbeat event firing too frequently (0.000 sec). This should never happen. Something is wrong with the timer delegate!
+[2019.06.16-20.48.20:071][819]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blocks/darkWood02" FILE="../../../../../../Github/EAE_3010/City Block/Content/Blocks/darkWood02.uasset" SILENT=true
+[2019.06.16-20.48.20:082][819]LogSavePackage: Moving '../../../../../../Github/EAE_3010/City Block/Saved/darkWood02B5BDB47246238ABC0AA27BA2B653EDEA.tmp' to '../../../../../../Github/EAE_3010/City Block/Content/Blocks/darkWood02.uasset'
+[2019.06.16-20.48.20:128][819]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blocks/arch" FILE="../../../../../../Github/EAE_3010/City Block/Content/Blocks/arch.uasset" SILENT=true
+[2019.06.16-20.48.20:143][819]LogSavePackage: Moving '../../../../../../Github/EAE_3010/City Block/Saved/arch283BF94E4777E3161C5C35AA265C5E51.tmp' to '../../../../../../Github/EAE_3010/City Block/Content/Blocks/arch.uasset'
+[2019.06.16-20.48.23:158][973]AssetReimport: Importing new asset /Game/Blocks/darkWood02.
+[2019.06.16-20.48.23:158][973]AssetReimport: Importing new asset /Game/Blocks/arch.
+[2019.06.16-20.48.23:365][983]AssetReimport: New page: Outstanding source content changes 8:48:23 AM
+[2019.06.16-20.48.23:369][983]LogEditorFactories: Performing atomic reimport of [D:/Github/EAE_3010/City Block/Content/Blocks/arch.obj]
+[2019.06.16-20.48.23:376][983]LogFbx: Loading FBX Scene from D:/Github/EAE_3010/City Block/Content/Blocks/arch.obj
+[2019.06.16-20.48.23:429][983]LogFbx: FBX Scene Loaded Succesfully
+[2019.06.16-20.48.23:602][983]LogStaticMesh: Building static mesh arch...
+[2019.06.16-20.48.23:640][983]LogStaticMesh: Built static mesh [0.04s] /Game/Blocks/arch.arch
+[2019.06.16-20.48.23:659][983]LogEditorFactories: -- imported successfully
+[2019.06.16-20.48.23:744][984]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blocks/arch" FILE="../../../../../../Github/EAE_3010/City Block/Content/Blocks/arch.uasset" SILENT=true
+[2019.06.16-20.48.23:770][984]LogSavePackage: Moving '../../../../../../Github/EAE_3010/City Block/Saved/archDD496E954333B93DE3982BBC876736B2.tmp' to '../../../../../../Github/EAE_3010/City Block/Content/Blocks/arch.uasset'
+[2019.06.16-20.48.26:787][194]AssetReimport: Reimported asset arch from D:/Github/EAE_3010/City Block/Content/Blocks/arch.obj.
+[2019.06.16-20.48.29:078][396]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.06.16-20.48.29:171][401]LogActorFactory: Actor Factory created arch
+[2019.06.16-20.48.30:345][471]LogActorFactory: Actor Factory created arch
+[2019.06.16-20.48.48:890][889]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.06.16-20.48.57:104][748]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.06.16-20.49.08:896][985]LogUnrealEdMisc: Warning: Heartbeat event firing too frequently (48.854 sec). This should never happen. Something is wrong with the timer delegate!
+[2019.06.16-20.50.04:025][522]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.06.16-20.53.22:673][662]LogUObjectHash: Compacting FUObjectHashTables data took   2.13ms
+[2019.06.16-20.53.22:674][662]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/WhiteBoxICA1" FILE="../../../../../../Github/EAE_3010/City Block/Saved/Autosaves/Game/WhiteBoxICA1_Auto3.umap" SILENT=true AUTOSAVING=true KEEPDIRTY=false
+[2019.06.16-20.53.23:610][662]LogSavePackage: Moving '../../../../../../Github/EAE_3010/City Block/Saved/WhiteBoxICA1_Auto346B180114B5EE845058100B3A7CD03AF.tmp' to '../../../../../../Github/EAE_3010/City Block/Saved/Autosaves/Game/WhiteBoxICA1_Auto3.umap'
+[2019.06.16-20.53.23:614][662]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/WhiteBoxICA1' took 0.987
+[2019.06.16-20.53.23:614][662]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.987
+[2019.06.16-20.53.23:622][662]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Blocks/blinn1SG] ([1] browsable assets)...
+[2019.06.16-20.53.23:649][662]OBJ SavePackage:     Rendered thumbnail for [Material /Game/Blocks/blinn1SG.blinn1SG]
+[2019.06.16-20.53.23:649][662]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blocks/blinn1SG]
+[2019.06.16-20.53.23:649][662]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blocks/blinn1SG" FILE="../../../../../../Github/EAE_3010/City Block/Saved/Autosaves/Game/Blocks/blinn1SG_Auto3.uasset" SILENT=false AUTOSAVING=true
+[2019.06.16-20.53.23:662][662]LogSavePackage: Moving '../../../../../../Github/EAE_3010/City Block/Saved/blinn1SG_Auto3E2CA49FA4095C890E2CF92B3A0B1F355.tmp' to '../../../../../../Github/EAE_3010/City Block/Saved/Autosaves/Game/Blocks/blinn1SG_Auto3.uasset'
+[2019.06.16-20.53.23:663][662]LogFileHelpers: Auto-saving content packages took 0.042
+[2019.06.16-21.00.13:703][880]AssetReimport: New page: Outstanding source content changes 9:00:13 AM
+[2019.06.16-21.00.13:708][880]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 D:/Github/EAE_3010/City Block/Content/Blocks/E.png)
+[2019.06.16-21.00.14:031][881]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 D:/Github/EAE_3010/City Block/Content/Blocks/rectangle.obj)
+[2019.06.16-21.00.14:041][881]LogFbx: Loading FBX Scene from D:/Github/EAE_3010/City Block/Content/Blocks/rectangle.obj
+[2019.06.16-21.00.14:042][881]LogFbx: FBX Scene Loaded Succesfully
+[2019.06.16-21.00.14:058][881]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2019.06.16-21.01.15:758][881]LogSlate: Window 'FBX Import Options' being destroyed
+[2019.06.16-21.01.16:022][881]LogStaticMesh: Building static mesh rectangle...
+[2019.06.16-21.01.16:024][881]LogStaticMesh: Built static mesh [0.00s] /Game/Blocks/rectangle.rectangle
+[2019.06.16-21.01.16:048][881]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2019.06.16-21.01.16:142][882]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blocks/E" FILE="../../../../../../Github/EAE_3010/City Block/Content/Blocks/E.uasset" SILENT=true
+[2019.06.16-21.01.16:284][882]LogSavePackage: Moving '../../../../../../Github/EAE_3010/City Block/Saved/E722842DF4709F3007DBB8DBABD9BE643.tmp' to '../../../../../../Github/EAE_3010/City Block/Content/Blocks/E.uasset'
+[2019.06.16-21.01.16:346][882]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blocks/rectangle" FILE="../../../../../../Github/EAE_3010/City Block/Content/Blocks/rectangle.uasset" SILENT=true
+[2019.06.16-21.01.16:362][882]LogSavePackage: Moving '../../../../../../Github/EAE_3010/City Block/Saved/rectangleAE1633864F71D424657C458EC20B6515.tmp' to '../../../../../../Github/EAE_3010/City Block/Content/Blocks/rectangle.uasset'
+[2019.06.16-21.01.19:384][ 27]AssetReimport: Importing new asset /Game/Blocks/E.
+[2019.06.16-21.01.19:384][ 27]AssetReimport: Importing new asset /Game/Blocks/rectangle.
+[2019.06.16-21.01.20:065][ 78]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.06.16-21.01.20:134][ 85]LogSlate: Window 'Message Log' being destroyed
+[2019.06.16-21.01.20:143][ 85]LogSlate: Window 'Message Log' being destroyed
+[2019.06.16-21.01.23:467][346]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.06.16-21.01.23:582][353]LogActorFactory: Actor Factory created rectangle
+[2019.06.16-21.01.25:037][454]LogActorFactory: Actor Factory created rectangle
+[2019.06.16-21.01.44:870][254]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.06.16-21.01.47:735][457]LogUObjectHash: Compacting FUObjectHashTables data took   3.09ms
+[2019.06.16-21.01.49:500][457]LogSlate: Window 'Delete Assets' being destroyed
+[2019.06.16-21.01.49:508][457]LogUObjectGlobals: Force Deleting 1 Package(s):
+	Asset Name: /Game/Blocks/arch.arch
+[2019.06.16-21.01.50:278][457]LogUObjectHash: Compacting FUObjectHashTables data took   2.43ms
+[2019.06.16-21.01.50:326][457]LogUObjectHash: Compacting FUObjectHashTables data took   2.52ms
+[2019.06.16-21.01.50:364][457]LogUObjectHash: Compacting FUObjectHashTables data took   0.84ms
+[2019.06.16-21.01.52:919][640]LogUObjectHash: Compacting FUObjectHashTables data took   1.37ms
+[2019.06.16-21.01.56:462][640]LogSlate: Window 'Delete Assets' being destroyed
+[2019.06.16-21.01.56:467][640]LogUObjectGlobals: Force Deleting 1 Package(s):
+	Asset Name: /Game/Blocks/rectangle.rectangle
+[2019.06.16-21.01.56:813][640]LogUObjectHash: Compacting FUObjectHashTables data took   2.03ms
+[2019.06.16-21.01.56:855][640]LogUObjectHash: Compacting FUObjectHashTables data took   1.96ms
+[2019.06.16-21.01.56:894][640]LogUObjectHash: Compacting FUObjectHashTables data took   1.25ms
+[2019.06.16-21.02.09:163][920]LogUnrealEdMisc: Warning: Heartbeat event firing too frequently (53.064 sec). This should never happen. Something is wrong with the timer delegate!
+[2019.06.16-21.02.37:570][780]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2019.06.16-21.02.37:578][780]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/WhiteBoxICA1" FILE="../../../../../../Github/EAE_3010/City Block/Content/WhiteBoxICA1.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2019.06.16-21.02.37:619][780]LogUObjectHash: Compacting FUObjectHashTables data took   0.84ms
+[2019.06.16-21.02.38:579][780]LogSavePackage: Moving '../../../../../../Github/EAE_3010/City Block/Saved/WhiteBoxICA15D501D7144DA32CA8A1DC1B1F59B4C79.tmp' to '../../../../../../Github/EAE_3010/City Block/Content/WhiteBoxICA1.umap'
+[2019.06.16-21.02.38:604][780]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/WhiteBoxICA1_BuiltData" FILE="../../../../../../Github/EAE_3010/City Block/Content/WhiteBoxICA1_BuiltData.uasset" SILENT=true
+[2019.06.16-21.02.38:652][780]LogSavePackage: Moving '../../../../../../Github/EAE_3010/City Block/Saved/WhiteBoxICA1_BuiltData852E8063462B10C552368087052A34F6.tmp' to '../../../../../../Github/EAE_3010/City Block/Content/WhiteBoxICA1_BuiltData.uasset'
+[2019.06.16-21.02.41:173][ 19]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.06.16-21.02.41:310][ 30]LogUObjectHash: Compacting FUObjectHashTables data took   2.10ms
+[2019.06.16-21.02.43:113][ 30]LogSlate: Window 'Save Content' being destroyed
+[2019.06.16-21.02.43:140][ 30]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blocks/blinn1SG" FILE="../../../../../../Github/EAE_3010/City Block/Content/Blocks/blinn1SG.uasset" SILENT=true
+[2019.06.16-21.02.43:145][ 30]LogSavePackage: Moving '../../../../../../Github/EAE_3010/City Block/Saved/blinn1SG5F670F924C42DAAE3FAEAC9543608A14.tmp' to '../../../../../../Github/EAE_3010/City Block/Content/Blocks/blinn1SG.uasset'
+[2019.06.16-21.02.43:170][ 30]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blocks/blinn3SG" FILE="../../../../../../Github/EAE_3010/City Block/Content/Blocks/blinn3SG.uasset" SILENT=true
+[2019.06.16-21.02.43:191][ 30]LogSavePackage: Moving '../../../../../../Github/EAE_3010/City Block/Saved/blinn3SG8E37CDC246A3F878324F26A605E8BBD5.tmp' to '../../../../../../Github/EAE_3010/City Block/Content/Blocks/blinn3SG.uasset'
+[2019.06.16-21.02.43:257][ 30]LogSlate: Window 'cityBlock - Unreal Editor' being destroyed
+[2019.06.16-21.02.43:502][ 31]Cmd: QUIT_EDITOR
+[2019.06.16-21.02.43:554][ 31]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2019.06.16-21.02.43:587][ 31]LogExit: Preparing to exit.
+[2019.06.16-21.02.44:013][ 31]LogExit: Editor shut down
+[2019.06.16-21.02.44:014][ 31]LogExit: Transaction tracking system shut down
+[2019.06.16-21.02.44:528][ 31]LogExit: Object subsystem successfully closed.
+[2019.06.16-21.02.44:582][ 31]LogShaderCompilers: Display: Shaders left to compile 0
+[2019.06.16-21.02.44:601][ 31]LogD3D11RHI: Shutdown
+[2019.06.16-21.02.44:602][ 31]LogD3D11RHI: CleanupD3DDevice
+[2019.06.16-21.02.44:607][ 31]LogRendererCore: FGlobalReadBuffer::ReleaseRHI
+[2019.06.16-21.02.44:607][ 31]LogRendererCore: FGlobalDynamicReadBuffer::Cleanup()
+[2019.06.16-21.02.44:608][ 31]LogRendererCore: FGlobalReadBuffer::ReleaseRHI
+[2019.06.16-21.02.44:608][ 31]LogRendererCore: FGlobalDynamicReadBuffer::Cleanup()
+[2019.06.16-21.02.44:608][ 31]LogRendererCore: FGlobalReadBuffer::ReleaseRHI
+[2019.06.16-21.02.44:608][ 31]LogRendererCore: FGlobalDynamicReadBuffer::Cleanup()
+[2019.06.16-21.02.44:908][ 31]LogD3D11RHI: ~FD3D11DynamicRHI
+[2019.06.16-21.02.44:996][ 31]LogModuleManager: Shutting down and abandoning module MeshBuilder (646)
+[2019.06.16-21.02.44:996][ 31]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (644)
+[2019.06.16-21.02.44:996][ 31]LogModuleManager: Shutting down and abandoning module SceneOutliner (642)
+[2019.06.16-21.02.44:996][ 31]LogModuleManager: Shutting down and abandoning module AddContentDialog (640)
+[2019.06.16-21.02.45:001][ 31]LogModuleManager: Shutting down and abandoning module WidgetCarousel (639)
+[2019.06.16-21.02.45:001][ 31]LogModuleManager: Shutting down and abandoning module EditorWidgets (636)
+[2019.06.16-21.02.45:002][ 31]LogModuleManager: Shutting down and abandoning module CollectionManager (634)
+[2019.06.16-21.02.45:002][ 31]LogModuleManager: Shutting down and abandoning module HierarchicalLODUtilities (632)
+[2019.06.16-21.02.45:003][ 31]LogModuleManager: Shutting down and abandoning module StatsViewer (630)
+[2019.06.16-21.02.45:003][ 31]LogModuleManager: Shutting down and abandoning module FoliageEdit (628)
+[2019.06.16-21.02.45:003][ 31]LogModuleManager: Shutting down and abandoning module LandscapeEditor (626)
+[2019.06.16-21.02.45:005][ 31]LogModuleManager: Shutting down and abandoning module MeshPaintMode (624)
+[2019.06.16-21.02.45:005][ 31]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (622)
+[2019.06.16-21.02.45:005][ 31]LogModuleManager: Shutting down and abandoning module ActorPickerMode (620)
+[2019.06.16-21.02.45:005][ 31]LogModuleManager: Shutting down and abandoning module GeometryMode (618)
+[2019.06.16-21.02.45:005][ 31]LogModuleManager: Shutting down and abandoning module TextureAlignMode (616)
+[2019.06.16-21.02.45:005][ 31]LogModuleManager: Shutting down and abandoning module BspMode (614)
+[2019.06.16-21.02.45:005][ 31]LogModuleManager: Shutting down and abandoning module PIEPreviewDeviceProfileSelector (612)
+[2019.06.16-21.02.45:006][ 31]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (610)
+[2019.06.16-21.02.45:006][ 31]LogModuleManager: Shutting down and abandoning module AutomationWorker (608)
+[2019.06.16-21.02.45:006][ 31]LogModuleManager: Shutting down and abandoning module OculusMR (606)
+[2019.06.16-21.02.45:006][ 31]LogModuleManager: Shutting down and abandoning module AudioCaptureEditor (604)
+[2019.06.16-21.02.45:006][ 31]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (602)
+[2019.06.16-21.02.45:007][ 31]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (600)
+[2019.06.16-21.02.45:009][ 31]LogModuleManager: Shutting down and abandoning module PlacementMode (599)
+[2019.06.16-21.02.45:010][ 31]LogModuleManager: Shutting down and abandoning module MaterialEditor (598)
+[2019.06.16-21.02.45:011][ 31]LogModuleManager: Shutting down and abandoning module ActorSequenceEditor (594)
+[2019.06.16-21.02.45:012][ 31]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (592)
+[2019.06.16-21.02.45:012][ 31]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (590)
+[2019.06.16-21.02.45:012][ 31]LogModuleManager: Shutting down and abandoning module WebMMediaFactory (588)
+[2019.06.16-21.02.45:012][ 31]LogModuleManager: Shutting down and abandoning module WebMMediaEditor (586)
+[2019.06.16-21.02.45:012][ 31]LogModuleManager: Shutting down and abandoning module WebMMedia (584)
+[2019.06.16-21.02.45:012][ 31]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (582)
+[2019.06.16-21.02.45:012][ 31]LogModuleManager: Shutting down and abandoning module MediaCompositingEditor (580)
+[2019.06.16-21.02.45:014][ 31]LogModuleManager: Shutting down and abandoning module SequenceRecorder (579)
+[2019.06.16-21.02.45:015][ 31]LogModuleManager: Shutting down and abandoning module OpenExrWrapper (576)
+[2019.06.16-21.02.45:015][ 31]LogModuleManager: Shutting down and abandoning module ImgMediaFactory (574)
+[2019.06.16-21.02.45:015][ 31]LogModuleManager: Shutting down and abandoning module ImgMediaEditor (572)
+[2019.06.16-21.02.45:015][ 31]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (570)
+[2019.06.16-21.02.45:015][ 31]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (568)
+[2019.06.16-21.02.45:015][ 31]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (566)
+[2019.06.16-21.02.45:015][ 31]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (564)
+[2019.06.16-21.02.45:015][ 31]LogModuleManager: Shutting down and abandoning module MagicLeapCameraPreviewFactory (562)
+[2019.06.16-21.02.45:015][ 31]LogModuleManager: Shutting down and abandoning module MagicLeapMediaCodecFactory (560)
+[2019.06.16-21.02.45:015][ 31]LogModuleManager: Shutting down and abandoning module MagicLeapMediaFactory (558)
+[2019.06.16-21.02.45:015][ 31]LogModuleManager: Shutting down and abandoning module MagicLeapMediaEditor (556)
+[2019.06.16-21.02.45:015][ 31]LogModuleManager: Shutting down and abandoning module CharacterAI (554)
+[2019.06.16-21.02.45:015][ 31]LogModuleManager: Shutting down and abandoning module SmartSnapping (552)
+[2019.06.16-21.02.45:015][ 31]LogModuleManager: Shutting down and abandoning module SessionServices (550)
+[2019.06.16-21.02.45:015][ 31]LogModuleManager: Shutting down and abandoning module MeshPaint (548)
+[2019.06.16-21.02.45:015][ 31]LogModuleManager: Shutting down and abandoning module ViewportSnapping (546)
+[2019.06.16-21.02.45:015][ 31]LogModuleManager: Shutting down and abandoning module ViewportInteraction (544)
+[2019.06.16-21.02.45:015][ 31]LogModuleManager: Shutting down and abandoning module ClothPainter (542)
+[2019.06.16-21.02.45:017][ 31]LogModuleManager: Shutting down and abandoning module SkeletalMeshEditor (541)
+[2019.06.16-21.02.45:018][ 31]LogModuleManager: Shutting down and abandoning module LogVisualizer (538)
+[2019.06.16-21.02.45:019][ 31]LogModuleManager: Shutting down and abandoning module IntroTutorials (536)
+[2019.06.16-21.02.45:020][ 31]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (535)
+[2019.06.16-21.02.45:021][ 31]LogModuleManager: Shutting down and abandoning module LuminPlatformEditor (532)
+[2019.06.16-21.02.45:021][ 31]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (530)
+[2019.06.16-21.02.45:021][ 31]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (528)
+[2019.06.16-21.02.45:022][ 31]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (526)
+[2019.06.16-21.02.45:022][ 31]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (525)
+[2019.06.16-21.02.45:841][ 31]LogModuleManager: Shutting down and abandoning module WindowsPlatformEditor (522)
+[2019.06.16-21.02.45:842][ 31]LogModuleManager: Shutting down and abandoning module LuminRuntimeSettings (520)
+[2019.06.16-21.02.45:842][ 31]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (518)
+[2019.06.16-21.02.45:842][ 31]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (516)
+[2019.06.16-21.02.45:842][ 31]LogModuleManager: Shutting down and abandoning module TimeManagementEditor (514)
+[2019.06.16-21.02.45:842][ 31]LogModuleManager: Shutting down and abandoning module InputBindingEditor (512)
+[2019.06.16-21.02.45:842][ 31]LogModuleManager: Shutting down and abandoning module MergeActors (510)
+[2019.06.16-21.02.45:842][ 31]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (508)
+[2019.06.16-21.02.45:843][ 31]LogModuleManager: Shutting down and abandoning module LocalizationService (507)
+[2019.06.16-21.02.45:843][ 31]LogModuleManager: Shutting down and abandoning module HardwareTargeting (504)
+[2019.06.16-21.02.45:843][ 31]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (502)
+[2019.06.16-21.02.45:843][ 31]LogModuleManager: Shutting down and abandoning module UndoHistory (500)
+[2019.06.16-21.02.45:844][ 31]LogModuleManager: Shutting down and abandoning module XmlParser (498)
+[2019.06.16-21.02.45:844][ 31]LogModuleManager: Shutting down and abandoning module Blutility (496)
+[2019.06.16-21.02.45:844][ 31]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (494)
+[2019.06.16-21.02.45:844][ 31]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (493)
+[2019.06.16-21.02.45:845][ 31]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (490)
+[2019.06.16-21.02.45:845][ 31]LogModuleManager: Shutting down and abandoning module SettingsEditor (488)
+[2019.06.16-21.02.45:845][ 31]LogModuleManager: Shutting down and abandoning module ProjectLauncher (486)
+[2019.06.16-21.02.45:846][ 31]LogModuleManager: Shutting down and abandoning module SessionFrontend (484)
+[2019.06.16-21.02.45:846][ 31]LogModuleManager: Shutting down and abandoning module ProfilerClient (482)
+[2019.06.16-21.02.45:846][ 31]LogModuleManager: Shutting down and abandoning module DeviceManager (480)
+[2019.06.16-21.02.45:847][ 31]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (479)
+[2019.06.16-21.02.45:891][ 31]LogModuleManager: Shutting down and abandoning module AutomationController (476)
+[2019.06.16-21.02.45:891][ 31]LogModuleManager: Shutting down and abandoning module AutomationWindow (474)
+[2019.06.16-21.02.45:892][ 31]LogModuleManager: Shutting down and abandoning module Layers (472)
+[2019.06.16-21.02.45:893][ 31]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (470)
+[2019.06.16-21.02.45:893][ 31]LogModuleManager: Shutting down and abandoning module DetailCustomizations (468)
+[2019.06.16-21.02.45:893][ 31]LogModuleManager: Shutting down and abandoning module PackagesDialog (466)
+[2019.06.16-21.02.45:893][ 31]LogModuleManager: Shutting down and abandoning module AnimationBlueprintEditor (464)
+[2019.06.16-21.02.45:894][ 31]LogModuleManager: Shutting down and abandoning module Persona (462)
+[2019.06.16-21.02.45:895][ 31]LogModuleManager: Shutting down and abandoning module AdvancedPreviewScene (461)
+[2019.06.16-21.02.45:895][ 31]LogModuleManager: Shutting down and abandoning module AnimGraph (459)
+[2019.06.16-21.02.45:895][ 31]LogModuleManager: Shutting down and abandoning module Kismet (456)
+[2019.06.16-21.02.45:897][ 31]LogModuleManager: Shutting down and abandoning module GraphEditor (454)
+[2019.06.16-21.02.45:898][ 31]LogModuleManager: Shutting down and abandoning module ClassViewer (452)
+[2019.06.16-21.02.45:898][ 31]LogModuleManager: Shutting down and abandoning module Toolbox (450)
+[2019.06.16-21.02.45:898][ 31]LogModuleManager: Shutting down and abandoning module ModuleUI (448)
+[2019.06.16-21.02.45:899][ 31]LogModuleManager: Shutting down and abandoning module MovieSceneTools (446)
+[2019.06.16-21.02.45:899][ 31]LogModuleManager: Shutting down and abandoning module OutputLog (444)
+[2019.06.16-21.02.45:899][ 31]LogModuleManager: Shutting down and abandoning module GammaUI (442)
+[2019.06.16-21.02.45:899][ 31]LogModuleManager: Shutting down and abandoning module Documentation (440)
+[2019.06.16-21.02.45:899][ 31]LogModuleManager: Shutting down and abandoning module LiveCoding (438)
+[2019.06.16-21.02.45:900][ 31]LogModuleManager: Shutting down and abandoning module LevelSequence (436)
+[2019.06.16-21.02.45:900][ 31]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (434)
+[2019.06.16-21.02.45:900][ 31]LogModuleManager: Shutting down and abandoning module MovieScene (432)
+[2019.06.16-21.02.45:900][ 31]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (430)
+[2019.06.16-21.02.45:900][ 31]LogModuleManager: Shutting down and abandoning module LauncherPlatform (428)
+[2019.06.16-21.02.45:900][ 31]LogModuleManager: Shutting down and abandoning module AnalyticsET (426)
+[2019.06.16-21.02.45:900][ 31]LogModuleManager: Shutting down and abandoning module PortalServices (424)
+[2019.06.16-21.02.45:900][ 31]LogModuleManager: Shutting down and abandoning module PortalRpc (422)
+[2019.06.16-21.02.45:900][ 31]LogModuleManager: Shutting down and abandoning module MessagingRpc (420)
+[2019.06.16-21.02.45:900][ 31]LogModuleManager: Shutting down and abandoning module AIModule (418)
+[2019.06.16-21.02.45:901][ 31]LogModuleManager: Shutting down and abandoning module GameplayDebugger (417)
+[2019.06.16-21.02.45:901][ 31]LogModuleManager: Shutting down and abandoning module AITestSuite (415)
+[2019.06.16-21.02.45:901][ 31]LogModuleManager: Shutting down and abandoning module NavigationSystem (413)
+[2019.06.16-21.02.45:901][ 31]LogModuleManager: Shutting down and abandoning module DesktopPlatform (410)
+[2019.06.16-21.02.45:902][ 31]LogModuleManager: Shutting down and abandoning module ImageWriteQueue (408)
+[2019.06.16-21.02.45:907][ 31]LogModuleManager: Shutting down and abandoning module ProfilerService (406)
+[2019.06.16-21.02.45:942][ 31]LogModuleManager: Shutting down and abandoning module TaskGraph (404)
+[2019.06.16-21.02.45:942][ 31]LogModuleManager: Shutting down and abandoning module SteamVRController (402)
+[2019.06.16-21.02.45:942][ 31]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (400)
+[2019.06.16-21.02.45:942][ 31]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (398)
+[2019.06.16-21.02.45:942][ 31]LogModuleManager: Shutting down and abandoning module OculusEditor (396)
+[2019.06.16-21.02.45:943][ 31]LogModuleManager: Shutting down and abandoning module OculusInput (394)
+[2019.06.16-21.02.45:943][ 31]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (392)
+[2019.06.16-21.02.45:943][ 31]LogModuleManager: Shutting down and abandoning module EditableMesh (390)
+[2019.06.16-21.02.45:943][ 31]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (388)
+[2019.06.16-21.02.45:943][ 31]LogModuleManager: Shutting down and abandoning module CableComponent (386)
+[2019.06.16-21.02.45:943][ 31]LogModuleManager: Shutting down and abandoning module AudioCapture (384)
+[2019.06.16-21.02.45:943][ 31]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (382)
+[2019.06.16-21.02.45:943][ 31]LogModuleManager: Shutting down and abandoning module AndroidPermission (380)
+[2019.06.16-21.02.45:943][ 31]LogModuleManager: Shutting down and abandoning module NUTUnrealEngine4 (378)
+[2019.06.16-21.02.45:943][ 31]LogModuleManager: Shutting down and abandoning module NetcodeUnitTest (376)
+[2019.06.16-21.02.45:944][ 31]LogModuleManager: Shutting down and abandoning module MediaCompositing (374)
+[2019.06.16-21.02.45:944][ 31]LogModuleManager: Shutting down and abandoning module LinearTimecode (372)
+[2019.06.16-21.02.45:944][ 31]LogModuleManager: Shutting down and abandoning module ImgMedia (370)
+[2019.06.16-21.02.45:944][ 31]LogModuleManager: Shutting down and abandoning module MagicLeapHelperVulkan (368)
+[2019.06.16-21.02.45:944][ 31]LogModuleManager: Shutting down and abandoning module MagicLeapHelperOpenGL (366)
+[2019.06.16-21.02.45:944][ 31]LogModuleManager: Shutting down and abandoning module MagicLeapAudio (364)
+[2019.06.16-21.02.45:944][ 31]LogModuleManager: Shutting down and abandoning module HTML5Networking (362)
+[2019.06.16-21.02.45:944][ 31]LogModuleManager: Shutting down and abandoning module GeometryCacheTracks (360)
+[2019.06.16-21.02.45:944][ 31]LogModuleManager: Shutting down and abandoning module GeometryCacheSequencer (358)
+[2019.06.16-21.02.45:944][ 31]LogModuleManager: Shutting down and abandoning module BackChannel (356)
+[2019.06.16-21.02.45:945][ 31]LogModuleManager: Shutting down and abandoning module AppleVision (354)
+[2019.06.16-21.02.45:945][ 31]LogModuleManager: Shutting down and abandoning module AppleImageUtilsBlueprintSupport (352)
+[2019.06.16-21.02.45:945][ 31]LogModuleManager: Shutting down and abandoning module AppleImageUtils (350)
+[2019.06.16-21.02.45:945][ 31]LogModuleManager: Shutting down and abandoning module AlembicImporter (348)
+[2019.06.16-21.02.45:945][ 31]LogModuleManager: Shutting down and abandoning module AlembicLibrary (347)
+[2019.06.16-21.02.45:945][ 31]LogModuleManager: Shutting down and abandoning module GeometryCache (346)
+[2019.06.16-21.02.45:945][ 31]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (345)
+[2019.06.16-21.02.45:945][ 31]LogModuleManager: Shutting down and abandoning module VariantManagerContent (340)
+[2019.06.16-21.02.45:945][ 31]LogModuleManager: Shutting down and abandoning module DatasmithContentEditor (338)
+[2019.06.16-21.02.45:945][ 31]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (336)
+[2019.06.16-21.02.45:945][ 31]LogModuleManager: Shutting down and abandoning module PluginBrowser (334)
+[2019.06.16-21.02.45:946][ 31]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (332)
+[2019.06.16-21.02.45:947][ 31]LogModuleManager: Shutting down and abandoning module MaterialAnalyzer (330)
+[2019.06.16-21.02.45:947][ 31]LogModuleManager: Shutting down and abandoning module CryptoKeysOpenSSL (328)
+[2019.06.16-21.02.45:947][ 31]LogModuleManager: Shutting down and abandoning module CryptoKeys (326)
+[2019.06.16-21.02.45:947][ 31]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (324)
+[2019.06.16-21.02.45:948][ 31]LogModuleManager: Shutting down and abandoning module VisualStudioCodeSourceCodeAccess (322)
+[2019.06.16-21.02.45:948][ 31]LogModuleManager: Shutting down and abandoning module UObjectPlugin (320)
+[2019.06.16-21.02.45:948][ 31]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (318)
+[2019.06.16-21.02.45:948][ 31]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (316)
+[2019.06.16-21.02.45:950][ 31]LogModuleManager: Shutting down and abandoning module GitSourceControl (314)
+[2019.06.16-21.02.45:951][ 31]LogModuleManager: Shutting down and abandoning module SourceControl (313)
+[2019.06.16-21.02.45:951][ 31]LogModuleManager: Shutting down and abandoning module CLionSourceCodeAccess (310)
+[2019.06.16-21.02.45:951][ 31]LogModuleManager: Shutting down and abandoning module AnimationSharingEd (308)
+[2019.06.16-21.02.45:951][ 31]LogModuleManager: Shutting down and abandoning module ActorLayerUtilitiesEditor (306)
+[2019.06.16-21.02.45:951][ 31]LogModuleManager: Shutting down and abandoning module ActorLayerUtilities (304)
+[2019.06.16-21.02.45:951][ 31]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (302)
+[2019.06.16-21.02.45:952][ 31]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (300)
+[2019.06.16-21.02.45:952][ 31]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (298)
+[2019.06.16-21.02.45:952][ 31]LogModuleManager: Shutting down and abandoning module Paper2DEditor (296)
+[2019.06.16-21.02.45:953][ 31]LogModuleManager: Shutting down and abandoning module SignificanceManager (294)
+[2019.06.16-21.02.45:953][ 31]LogModuleManager: Shutting down and abandoning module RuntimePhysXCooking (292)
+[2019.06.16-21.02.45:953][ 31]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (290)
+[2019.06.16-21.02.45:953][ 31]LogModuleManager: Shutting down and abandoning module PhysXVehicles (288)
+[2019.06.16-21.02.45:953][ 31]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (286)
+[2019.06.16-21.02.45:953][ 31]LogModuleManager: Shutting down and abandoning module ActorSequence (284)
+[2019.06.16-21.02.45:953][ 31]LogModuleManager: Shutting down and abandoning module UdpMessaging (282)
+[2019.06.16-21.02.46:054][ 31]LogModuleManager: Shutting down and abandoning module TcpMessaging (280)
+[2019.06.16-21.02.46:155][ 31]LogModuleManager: Shutting down and abandoning module MagicLeapIdentity (278)
+[2019.06.16-21.02.46:155][ 31]LogModuleManager: Shutting down and abandoning module MagicLeapSecureStorage (276)
+[2019.06.16-21.02.46:155][ 31]LogModuleManager: Shutting down and abandoning module MagicLeapHandTracking (274)
+[2019.06.16-21.02.46:155][ 31]LogModuleManager: Shutting down and abandoning module MagicLeapEyeTracker (272)
+[2019.06.16-21.02.46:155][ 31]LogModuleManager: Shutting down and abandoning module MagicLeapController (270)
+[2019.06.16-21.02.46:156][ 31]LogSlate: Slate User Destroyed.  User Index 0, Is Virtual User: 0
+[2019.06.16-21.02.46:156][ 31]LogModuleManager: Shutting down and abandoning module MagicLeapAR (268)
+[2019.06.16-21.02.46:156][ 31]LogModuleManager: Shutting down and abandoning module AugmentedReality (267)
+[2019.06.16-21.02.46:156][ 31]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (264)
+[2019.06.16-21.02.46:156][ 31]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (262)
+[2019.06.16-21.02.46:157][ 31]LogModuleManager: Shutting down and abandoning module FacialAnimation (260)
+[2019.06.16-21.02.46:157][ 31]LogModuleManager: Shutting down and abandoning module DataValidation (258)
+[2019.06.16-21.02.46:157][ 31]LogModuleManager: Shutting down and abandoning module AssetManagerEditor (256)
+[2019.06.16-21.02.46:158][ 31]LogModuleManager: Shutting down and abandoning module LevelEditor (255)
+[2019.06.16-21.02.46:160][ 31]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (254)
+[2019.06.16-21.02.46:161][ 31]LogModuleManager: Shutting down and abandoning module CommonMenuExtensions (252)
+[2019.06.16-21.02.46:161][ 31]LogModuleManager: Shutting down and abandoning module MainFrame (250)
+[2019.06.16-21.02.46:161][ 31]LogModuleManager: Shutting down and abandoning module HotReload (249)
+[2019.06.16-21.02.46:162][ 31]LogModuleManager: Shutting down and abandoning module ContentBrowser (245)
+[2019.06.16-21.02.46:163][ 31]LogModuleManager: Shutting down and abandoning module TreeMap (243)
+[2019.06.16-21.02.46:163][ 31]LogModuleManager: Shutting down and abandoning module AnimationSharing (240)
+[2019.06.16-21.02.46:164][ 31]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (238)
+[2019.06.16-21.02.46:164][ 31]LogModuleManager: Shutting down and abandoning module AISupportModule (236)
+[2019.06.16-21.02.46:164][ 31]LogModuleManager: Shutting down and abandoning module Paper2D (234)
+[2019.06.16-21.02.46:164][ 31]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (232)
+[2019.06.16-21.02.46:164][ 31]LogModuleManager: Shutting down and abandoning module WebMMoviePlayer (230)
+[2019.06.16-21.02.46:164][ 31]LogModuleManager: Shutting down and abandoning module PacketHandler (228)
+[2019.06.16-21.02.46:164][ 31]LogModuleManager: Shutting down and abandoning module ClothingSystemEditor (226)
+[2019.06.16-21.02.46:164][ 31]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntime (224)
+[2019.06.16-21.02.46:165][ 31]LogModuleManager: Shutting down and abandoning module MediaAssets (222)
+[2019.06.16-21.02.46:165][ 31]LogModuleManager: Shutting down and abandoning module Overlay (220)
+[2019.06.16-21.02.46:165][ 31]LogModuleManager: Shutting down and abandoning module OverlayEditor (219)
+[2019.06.16-21.02.46:165][ 31]LogModuleManager: Shutting down and abandoning module VREditor (216)
+[2019.06.16-21.02.46:166][ 31]LogModuleManager: Shutting down and abandoning module StringTableEditor (214)
+[2019.06.16-21.02.46:166][ 31]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (212)
+[2019.06.16-21.02.46:166][ 31]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (210)
+[2019.06.16-21.02.46:167][ 31]LogModuleManager: Shutting down and abandoning module FunctionalTesting (208)
+[2019.06.16-21.02.46:167][ 31]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (206)
+[2019.06.16-21.02.46:168][ 31]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (205)
+[2019.06.16-21.02.46:170][ 31]LogModuleManager: Shutting down and abandoning module UMG (202)
+[2019.06.16-21.02.46:170][ 31]LogModuleManager: Shutting down and abandoning module UMGEditor (201)
+[2019.06.16-21.02.46:171][ 31]LogModuleManager: Shutting down and abandoning module Sequencer (200)
+[2019.06.16-21.02.46:172][ 31]LogModuleManager: Shutting down and abandoning module MessageLog (197)
+[2019.06.16-21.02.46:172][ 31]LogModuleManager: Shutting down and abandoning module SlateReflector (192)
+[2019.06.16-21.02.46:173][ 31]LogModuleManager: Shutting down and abandoning module Slate (190)
+[2019.06.16-21.02.46:173][ 31]LogModuleManager: Shutting down and abandoning module EditorStyle (188)
+[2019.06.16-21.02.46:178][ 31]LogModuleManager: Shutting down and abandoning module UnrealEd (186)
+[2019.06.16-21.02.46:178][ 31]LogModuleManager: Shutting down and abandoning module MRMesh (184)
+[2019.06.16-21.02.46:178][ 31]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (182)
+[2019.06.16-21.02.46:178][ 31]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (180)
+[2019.06.16-21.02.46:178][ 31]LogModuleManager: Shutting down and abandoning module XAudio2 (178)
+[2019.06.16-21.02.46:178][ 31]LogModuleManager: Shutting down and abandoning module Networking (176)
+[2019.06.16-21.02.46:178][ 31]LogModuleManager: Shutting down and abandoning module Core (174)
+[2019.06.16-21.02.46:178][ 31]LogModuleManager: Shutting down and abandoning module KismetCompiler (172)
+[2019.06.16-21.02.46:178][ 31]LogModuleManager: Shutting down and abandoning module MeshUtilities (170)
+[2019.06.16-21.02.46:178][ 31]LogModuleManager: Shutting down and abandoning module MeshMergeUtilities (169)
+[2019.06.16-21.02.46:179][ 31]LogModuleManager: Shutting down and abandoning module MeshReductionInterface (168)
+[2019.06.16-21.02.46:179][ 31]LogModuleManager: Shutting down and abandoning module SkeletalMeshReduction (167)
+[2019.06.16-21.02.46:179][ 31]LogModuleManager: Shutting down and abandoning module ProxyLODMeshReduction (165)
+[2019.06.16-21.02.46:181][ 31]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (163)
+[2019.06.16-21.02.46:181][ 31]LogModuleManager: Shutting down and abandoning module MaterialBaking (159)
+[2019.06.16-21.02.46:181][ 31]LogModuleManager: Shutting down and abandoning module DerivedDataCache (154)
+[2019.06.16-21.02.46:202][ 31]LogDerivedDataCache: Shutdown
+[2019.06.16-21.02.46:202][ 31]LogModuleManager: Shutting down and abandoning module XGEController (152)
+[2019.06.16-21.02.46:202][ 31]LogXGEController: Cleaning working directory: C:/Users/Noah/AppData/Local/Temp/UnrealXGEWorkingDir/
+[2019.06.16-21.02.46:202][ 31]LogModuleManager: Shutting down and abandoning module TargetPlatform (150)
+[2019.06.16-21.02.46:203][ 31]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (149)
+[2019.06.16-21.02.46:203][ 31]LogModuleManager: Shutting down and abandoning module ShaderFormatVectorVM (147)
+[2019.06.16-21.02.46:203][ 31]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (145)
+[2019.06.16-21.02.46:203][ 31]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (143)
+[2019.06.16-21.02.46:204][ 31]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (141)
+[2019.06.16-21.02.46:204][ 31]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (139)
+[2019.06.16-21.02.46:204][ 31]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (137)
+[2019.06.16-21.02.46:204][ 31]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (135)
+[2019.06.16-21.02.46:204][ 31]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (133)
+[2019.06.16-21.02.46:205][ 31]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (131)
+[2019.06.16-21.02.46:205][ 31]LogModuleManager: Shutting down and abandoning module ImageWrapper (130)
+[2019.06.16-21.02.46:205][ 31]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (127)
+[2019.06.16-21.02.46:205][ 31]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (125)
+[2019.06.16-21.02.46:205][ 31]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (123)
+[2019.06.16-21.02.46:205][ 31]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (121)
+[2019.06.16-21.02.46:205][ 31]LogModuleManager: Shutting down and abandoning module LuminTargetPlatform (119)
+[2019.06.16-21.02.46:218][ 31]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (117)
+[2019.06.16-21.02.46:218][ 31]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (115)
+[2019.06.16-21.02.46:218][ 31]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (113)
+[2019.06.16-21.02.46:218][ 31]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (111)
+[2019.06.16-21.02.46:218][ 31]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (109)
+[2019.06.16-21.02.46:223][ 31]LogModuleManager: Shutting down and abandoning module Messaging (107)
+[2019.06.16-21.02.46:224][ 31]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (105)
+[2019.06.16-21.02.46:228][ 31]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (103)
+[2019.06.16-21.02.46:228][ 31]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (101)
+[2019.06.16-21.02.46:270][ 31]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (99)
+[2019.06.16-21.02.46:270][ 31]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (97)
+[2019.06.16-21.02.46:271][ 31]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (95)
+[2019.06.16-21.02.46:271][ 31]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (93)
+[2019.06.16-21.02.46:272][ 31]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (91)
+[2019.06.16-21.02.46:272][ 31]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (89)
+[2019.06.16-21.02.46:272][ 31]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (87)
+[2019.06.16-21.02.46:272][ 31]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (85)
+[2019.06.16-21.02.46:272][ 31]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (83)
+[2019.06.16-21.02.46:272][ 31]LogModuleManager: Shutting down and abandoning module InputCore (80)
+[2019.06.16-21.02.46:272][ 31]LogModuleManager: Shutting down and abandoning module Settings (78)
+[2019.06.16-21.02.46:272][ 31]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (76)
+[2019.06.16-21.02.46:274][ 31]LogModuleManager: Shutting down and abandoning module PhysXCooking (74)
+[2019.06.16-21.02.46:274][ 31]LogModuleManager: Shutting down and abandoning module SteamVR (72)
+[2019.06.16-21.02.46:274][ 31]LogHMD: Freeing OpenVRDLLHandle.
+[2019.06.16-21.02.46:274][ 31]LogModuleManager: Shutting down and abandoning module OculusHMD (70)
+[2019.06.16-21.02.46:274][ 31]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (68)
+[2019.06.16-21.02.46:274][ 31]LogModuleManager: Shutting down and abandoning module LauncherChunkInstaller (66)
+[2019.06.16-21.02.46:274][ 31]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (64)
+[2019.06.16-21.02.46:275][ 31]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (60)
+[2019.06.16-21.02.46:277][ 31]LogModuleManager: Shutting down and abandoning module XMPP (55)
+[2019.06.16-21.02.46:278][ 31]LogModuleManager: Shutting down and abandoning module WebSockets (54)
+[2019.06.16-21.02.46:304][ 31]LogModuleManager: Shutting down and abandoning module HTTP (51)
+[2019.06.16-21.02.46:304][ 31]LogHttp: Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2019.06.16-21.02.46:304][ 31]LogHttp: Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B8009AB02-4A89-7E67-8D87-3B88C992B865%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.22.2-6574378%2B%2B%2BUE4%2BRelease-4.22&UserID=37754bf44ccd486d3a6dd198f784844a%7C8a277e5ac6d14b1cbc93a45d4bf87713%7C538d85c8-0c70-469f-a11c-22213a379c55&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2019.06.16-21.02.46:312][ 31]LogModuleManager: Shutting down and abandoning module SSL (50)
+[2019.06.16-21.02.46:319][ 31]LogModuleManager: Shutting down and abandoning module WmfMedia (46)
+[2019.06.16-21.02.46:321][ 31]LogModuleManager: Shutting down and abandoning module Media (45)
+[2019.06.16-21.02.46:328][ 31]LogModuleManager: Shutting down and abandoning module MagicLeap (42)
+[2019.06.16-21.02.46:328][ 31]LogModuleManager: Shutting down and abandoning module DatasmithContent (40)
+[2019.06.16-21.02.46:329][ 31]LogModuleManager: Shutting down and abandoning module AnimationModifiers (38)
+[2019.06.16-21.02.46:329][ 31]LogModuleManager: Shutting down and abandoning module PropertyEditor (37)
+[2019.06.16-21.02.46:332][ 31]LogModuleManager: Shutting down and abandoning module AudioEditor (34)
+[2019.06.16-21.02.46:334][ 31]LogModuleManager: Shutting down and abandoning module TextureCompressor (32)
+[2019.06.16-21.02.46:334][ 31]LogModuleManager: Shutting down and abandoning module RenderCore (30)
+[2019.06.16-21.02.46:334][ 31]LogModuleManager: Shutting down and abandoning module Landscape (28)
+[2019.06.16-21.02.46:334][ 31]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (26)
+[2019.06.16-21.02.46:337][ 31]LogModuleManager: Shutting down and abandoning module OpenGLDrv (24)
+[2019.06.16-21.02.46:338][ 31]LogModuleManager: Shutting down and abandoning module D3D11RHI (22)
+[2019.06.16-21.02.46:338][ 31]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (20)
+[2019.06.16-21.02.46:338][ 31]LogModuleManager: Shutting down and abandoning module Renderer (18)
+[2019.06.16-21.02.46:338][ 31]LogModuleManager: Shutting down and abandoning module Engine (16)
+[2019.06.16-21.02.46:338][ 31]LogModuleManager: Shutting down and abandoning module CoreUObject (14)
+[2019.06.16-21.02.46:338][ 31]LogModuleManager: Shutting down and abandoning module NetworkFile (12)
+[2019.06.16-21.02.46:338][ 31]LogModuleManager: Shutting down and abandoning module CookedIterativeFile (10)
+[2019.06.16-21.02.46:338][ 31]LogModuleManager: Shutting down and abandoning module StreamingFile (8)
+[2019.06.16-21.02.46:338][ 31]LogModuleManager: Shutting down and abandoning module SandboxFile (6)
+[2019.06.16-21.02.46:339][ 31]LogModuleManager: Shutting down and abandoning module PakFile (4)
+[2019.06.16-21.02.46:339][ 31]LogModuleManager: Shutting down and abandoning module RSA (3)
+[2019.06.16-21.02.46:360][ 31]LogExit: Exiting.
+[2019.06.16-21.02.46:377][ 31]Log file closed, 06/16/19 15:02:46
